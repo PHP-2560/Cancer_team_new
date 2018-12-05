@@ -1,0 +1,868 @@
+Year,Area,CancerType,AgeAdjustedRate,lci,uci,CaseCount,Population
+1999,Utah,Colon and Rectum,42.8,39.6,46.2,654,2203482
+1999,Arizona,Colon and Rectum,46.2,44.3,48.1,2315,5023823
+1999,Colorado,Colon and Rectum,47,44.7,49.4,1619,4226018
+1999,New Hampshire,Colon and Rectum,54.6,50.5,59,644,1222014
+1999,Mississippi,Colon and Rectum,null,null,null,Data Suppressed,null
+1999,Missouri,Colon and Rectum,58.7,56.8,60.7,3436,5561948
+1999,Montana,Colon and Rectum,55.6,50.9,60.5,527,897507
+1999,Minnesota,Colon and Rectum,52.4,50.3,54.5,2477,4873481
+1999,Illinois,Colon and Rectum,60.4,59,61.8,7188,12359020
+1999,Indiana,Colon and Rectum,57.8,55.9,59.7,3429,6044969
+1999,Iowa,Colon and Rectum,65.8,63.1,68.7,2201,2917634
+1999,Kansas,Colon and Rectum,56.2,53.4,59.1,1549,2678338
+1999,Kentucky,Colon and Rectum,61.6,59.2,64.1,2455,4018053
+1999,Louisiana,Colon and Rectum,59.5,57.1,61.9,2432,4460811
+1999,Maine,Colon and Rectum,63.4,59.3,67.7,898,1266808
+1999,Maryland,Colon and Rectum,55.6,53.5,57.7,2700,5254509
+1999,Massachusetts,Colon and Rectum,59.7,57.9,61.6,3998,6317345
+1999,Michigan,Colon and Rectum,55.7,54.2,57.2,5364,9897116
+1999,New Jersey,Colon and Rectum,63.2,61.6,64.9,5508,8359592
+1999,New York,Colon and Rectum,61.7,60.6,62.9,11824,18882725
+1999,North Carolina,Colon and Rectum,50.4,48.8,52,3872,7949361
+1999,North Dakota,Colon and Rectum,55.3,49.9,61.2,393,644259
+1999,Ohio,Colon and Rectum,59.5,58.1,60.9,6986,11335454
+1999,Oklahoma,Colon and Rectum,54,51.6,56.5,1912,3437147
+1999,Oregon,Colon and Rectum,53.5,51.1,56,1866,3393941
+1999,Pennsylvania,Colon and Rectum,62.2,60.9,63.5,9041,12263805
+1999,Rhode Island,Colon and Rectum,67.3,62.6,72.2,784,1040402
+1999,West Virginia,Colon and Rectum,61.8,58.5,65.3,1313,1811799
+1999,Texas,Colon and Rectum,50.7,49.6,51.8,8502,20558220
+1999,Vermont,Colon and Rectum,59.9,53.9,66.3,369,604683
+1999,Virginia,Colon and Rectum,50.7,49,52.5,3271,7000174
+1999,Washington,Colon and Rectum,52.9,51,54.9,2846,5842564
+1999,Alabama,Colon and Rectum,49.7,47.7,51.8,2250,4430141
+1999,Arkansas,Colon and Rectum,null,null,null,Data Suppressed,null
+1999,Alaska,Colon and Rectum,62,53.1,71.8,209,624779
+1999,Connecticut,Colon and Rectum,61.9,59.4,64.5,2283,3386401
+1999,Delaware,Colon and Rectum,58.4,53.1,64,454,774990
+1999,California,Colon and Rectum,50.8,50,51.6,14567,33499204
+1999,District of Columbia,Colon and Rectum,60.7,54.4,67.5,337,570213
+1999,Florida,Colon and Rectum,58.8,57.8,59.9,11925,15759421
+1999,Georgia,Colon and Rectum,50.5,48.8,52.3,3329,8045965
+1999,Hawaii,Colon and Rectum,55.5,51.4,59.8,680,1210300
+1999,Wisconsin,Colon and Rectum,60.8,58.8,62.9,3338,5332666
+1999,Wyoming,Colon and Rectum,58.3,51.5,65.8,267,491780
+1999,South Dakota,Colon and Rectum,null,null,null,Data Suppressed,null
+1999,Tennessee,Colon and Rectum,47.1,45.3,48.9,2640,5638706
+1999,South Carolina,Colon and Rectum,54.7,52.3,57.1,2102,3974682
+1999,Nebraska,Colon and Rectum,61.2,57.6,64.9,1100,1704764
+1999,Nevada,Colon and Rectum,51.6,48.2,55.2,895,1934718
+1999,Idaho,Colon and Rectum,45.4,41.6,49.4,526,1275674
+1999,New Mexico,Colon and Rectum,44.4,41.2,47.7,739,1808082
+2000,Idaho,Colon and Rectum,47.8,43.9,51.9,566,1299430
+2000,Florida,Colon and Rectum,59,57.9,60,12109,16047515
+2000,Georgia,Colon and Rectum,52.5,50.8,54.3,3567,8227303
+2000,Hawaii,Colon and Rectum,51.6,47.7,55.8,650,1213519
+2000,Illinois,Colon and Rectum,61.1,59.7,62.5,7328,12434161
+2000,Indiana,Colon and Rectum,57.2,55.3,59.1,3432,6091866
+2000,Iowa,Colon and Rectum,62.2,59.6,65,2110,2929067
+2000,Kansas,Colon and Rectum,55.9,53.1,58.8,1551,2693681
+2000,Kentucky,Colon and Rectum,61.7,59.3,64.2,2498,4049021
+2000,Louisiana,Colon and Rectum,61.1,58.8,63.6,2542,4471885
+2000,Maryland,Colon and Rectum,56.8,54.7,58.9,2822,5311034
+2000,Massachusetts,Colon and Rectum,57.9,56.1,59.7,3922,6361104
+2000,Maine,Colon and Rectum,59.9,56,64.1,865,1277072
+2000,Michigan,Colon and Rectum,54.8,53.3,56.2,5338,9952450
+2000,Alabama,Colon and Rectum,50.5,48.4,52.6,2305,4452173
+2000,Alaska,Colon and Rectum,66.6,57.6,76.5,232,627963
+2000,Arizona,Colon and Rectum,48.5,46.6,50.5,2499,5160586
+2000,Montana,Colon and Rectum,51.6,47.2,56.3,500,903773
+2000,Arkansas,Colon and Rectum,null,null,null,Data Suppressed,null
+2000,California,Colon and Rectum,49.5,48.7,50.3,14524,33987977
+2000,Nebraska,Colon and Rectum,62.2,58.6,65.9,1121,1713820
+2000,Colorado,Colon and Rectum,49.2,46.9,51.6,1731,4326921
+2000,Connecticut,Colon and Rectum,60.8,58.4,63.4,2268,3411777
+2000,Nevada,Colon and Rectum,54.8,51.4,58.4,986,2018741
+2000,Delaware,Colon and Rectum,62.8,57.4,68.5,500,786373
+2000,Minnesota,Colon and Rectum,53.1,51.1,55.2,2551,4933692
+2000,Mississippi,Colon and Rectum,null,null,null,Data Suppressed,null
+2000,Missouri,Colon and Rectum,59.9,58,62,3546,5607285
+2000,District of Columbia,Colon and Rectum,63.7,57.3,70.7,358,572046
+2000,New Hampshire,Colon and Rectum,54.8,50.7,59.2,665,1239882
+2000,New Jersey,Colon and Rectum,62.8,61.2,64.5,5541,8430621
+2000,New Mexico,Colon and Rectum,44.1,41,47.4,752,1821204
+2000,New York,Colon and Rectum,60.7,59.6,61.8,11794,19001780
+2000,North Carolina,Colon and Rectum,51.9,50.3,53.5,4069,8081614
+2000,North Dakota,Colon and Rectum,55.3,49.9,61.1,395,642023
+2000,Ohio,Colon and Rectum,56.4,55.1,57.8,6677,11363543
+2000,Oklahoma,Colon and Rectum,54.4,52,56.9,1943,3454365
+2000,Oregon,Colon and Rectum,52.4,50.1,54.9,1851,3429708
+2000,Pennsylvania,Colon and Rectum,61.3,60.1,62.6,8943,12284173
+2000,Rhode Island,Colon and Rectum,62.2,57.7,66.9,732,1050268
+2000,South Carolina,Colon and Rectum,55.7,53.4,58.1,2186,4024223
+2000,South Dakota,Colon and Rectum,null,null,null,Data Suppressed,null
+2000,Tennessee,Colon and Rectum,48.3,46.5,50.1,2750,5703719
+2000,Texas,Colon and Rectum,51.4,50.3,52.5,8829,20944499
+2000,Utah,Colon and Rectum,43.5,40.3,46.9,686,2244502
+2000,Wyoming,Colon and Rectum,47.8,41.8,54.5,226,494300
+2000,Vermont,Colon and Rectum,54.7,49.1,60.8,344,609618
+2000,Virginia,Colon and Rectum,51.7,50,53.5,3417,7105817
+2000,Washington,Colon and Rectum,51.6,49.7,53.5,2826,5910512
+2000,West Virginia,Colon and Rectum,61.8,58.5,65.3,1319,1807021
+2000,Wisconsin,Colon and Rectum,59.4,57.4,61.5,3295,5373999
+2001,Utah,Colon and Rectum,38.7,35.7,41.8,627,2283715
+2001,New Mexico,Colon and Rectum,43.3,40.2,46.5,758,1831690
+2001,New York,Colon and Rectum,58,57,59.1,11396,19082838
+2001,North Carolina,Colon and Rectum,49.6,48,51.1,3957,8210122
+2001,North Dakota,Colon and Rectum,58.6,53.1,64.5,424,639062
+2001,Ohio,Colon and Rectum,56.7,55.3,58,6760,11387404
+2001,Oklahoma,Colon and Rectum,54.3,51.9,56.7,1954,3467100
+2001,Montana,Colon and Rectum,55.7,51.2,60.6,548,906961
+2001,Nebraska,Colon and Rectum,58.8,55.4,62.5,1079,1719836
+2001,Nevada,Colon and Rectum,52.9,49.6,56.4,996,2098399
+2001,New Hampshire,Colon and Rectum,58.8,54.6,63.3,725,1255517
+2001,New Jersey,Colon and Rectum,62.6,61,64.3,5571,8492671
+2001,Oregon,Colon and Rectum,49.2,46.9,51.5,1770,3467937
+2001,Pennsylvania,Colon and Rectum,62.6,61.4,63.9,9195,12298970
+2001,Rhode Island,Colon and Rectum,60.6,56.3,65.3,721,1057142
+2001,South Carolina,Colon and Rectum,54.7,52.4,57,2188,4064995
+2001,South Dakota,Colon and Rectum,56.9,51.9,62.2,482,757972
+2001,Tennessee,Colon and Rectum,47.6,45.9,49.5,2753,5750789
+2001,Texas,Colon and Rectum,51.3,50.2,52.4,9012,21319622
+2001,Vermont,Colon and Rectum,54.7,49.1,60.8,350,612223
+2001,Virginia,Colon and Rectum,49.7,48,51.4,3355,7198362
+2001,Washington,Colon and Rectum,51.1,49.2,53,2852,5985722
+2001,West Virginia,Colon and Rectum,63.8,60.4,67.3,1367,1801481
+2001,Wisconsin,Colon and Rectum,56.5,54.6,58.5,3168,5406835
+2001,Wyoming,Colon and Rectum,47.6,41.6,54.2,229,494657
+2001,Indiana,Colon and Rectum,58.7,56.8,60.7,3561,6127760
+2001,Iowa,Colon and Rectum,63.3,60.6,66.1,2153,2931997
+2001,Kansas,Colon and Rectum,52.9,50.3,55.7,1481,2702162
+2001,Kentucky,Colon and Rectum,64,61.5,66.5,2617,4068132
+2001,Louisiana,Colon and Rectum,60,57.7,62.4,2522,4477875
+2001,Maine,Colon and Rectum,55.6,51.8,59.5,816,1285692
+2001,Maryland,Colon and Rectum,55.8,53.8,57.9,2825,5374691
+2001,Massachusetts,Colon and Rectum,62.1,60.3,64,4226,6397634
+2001,Michigan,Colon and Rectum,55.3,53.9,56.8,5462,9991120
+2001,Minnesota,Colon and Rectum,51.6,49.5,53.6,2499,4982796
+2001,Mississippi,Colon and Rectum,null,null,null,Data Suppressed,null
+2001,Missouri,Colon and Rectum,59.8,57.9,61.8,3566,5641142
+2001,Arizona,Colon and Rectum,46.9,45.1,48.8,2480,5273477
+2001,Arkansas,Colon and Rectum,51.3,48.7,54,1498,2691571
+2001,Alaska,Colon and Rectum,63.7,55.2,73.1,238,633714
+2001,California,Colon and Rectum,48.7,47.9,49.5,14587,34479458
+2001,Colorado,Colon and Rectum,46.8,44.6,49.1,1706,4425687
+2001,Connecticut,Colon and Rectum,58.9,56.5,61.4,2217,3432835
+2001,Delaware,Colon and Rectum,58.9,53.7,64.4,479,795699
+2001,District of Columbia,Colon and Rectum,58.2,52,64.9,326,574504
+2001,Florida,Colon and Rectum,56.8,55.8,57.8,11842,16356966
+2001,Georgia,Colon and Rectum,51.2,49.5,53,3545,8377038
+2001,Hawaii,Colon and Rectum,52.9,49,57,683,1225948
+2001,Idaho,Colon and Rectum,45.9,42.1,49.8,555,1319962
+2001,Illinois,Colon and Rectum,58.5,57.2,59.9,7081,12488445
+2001,Alabama,Colon and Rectum,50.6,48.5,52.7,2337,4467634
+2002,Utah,Colon and Rectum,42.1,39,45.3,698,2324815
+2002,Alaska,Colon and Rectum,55.4,47.7,64,215,642337
+2002,Connecticut,Colon and Rectum,59.3,56.9,61.8,2267,3458749
+2002,California,Colon and Rectum,47.5,46.7,48.2,14544,34871843
+2002,Colorado,Colon and Rectum,45.8,43.6,48.1,1702,4490406
+2002,Arizona,Colon and Rectum,44.9,43.1,46.7,2432,5396255
+2002,Arkansas,Colon and Rectum,50,47.4,52.6,1467,2705927
+2002,Missouri,Colon and Rectum,54.8,52.9,56.7,3306,5674825
+2002,Minnesota,Colon and Rectum,51.3,49.3,53.4,2541,5018935
+2002,Mississippi,Colon and Rectum,null,null,null,Data Suppressed,null
+2002,Michigan,Colon and Rectum,54.9,53.4,56.4,5490,10015710
+2002,Maryland,Colon and Rectum,52.2,50.3,54.2,2715,5440389
+2002,Massachusetts,Colon and Rectum,59.7,57.9,61.6,4106,6417206
+2002,Maine,Colon and Rectum,63.2,59.2,67.4,944,1295960
+2002,Louisiana,Colon and Rectum,59.6,57.3,62,2545,4497267
+2002,Kentucky,Colon and Rectum,60.4,58.1,62.8,2501,4089875
+2002,Iowa,Colon and Rectum,61.2,58.6,63.9,2086,2934234
+2002,Kansas,Colon and Rectum,50.4,47.8,53.1,1423,2713535
+2002,Indiana,Colon and Rectum,57.8,55.9,59.7,3545,6155967
+2002,Idaho,Colon and Rectum,44.1,40.5,48,550,1340372
+2002,Illinois,Colon and Rectum,59.7,58.3,61,7279,12525556
+2002,Hawaii,Colon and Rectum,55.7,51.7,59.9,737,1239613
+2002,Florida,Colon and Rectum,53.4,52.4,54.4,11358,16689370
+2002,Georgia,Colon and Rectum,53,51.3,54.8,3766,8508256
+2002,District of Columbia,Colon and Rectum,80.9,73.6,88.7,457,573158
+2002,Delaware,Colon and Rectum,53.4,48.5,58.6,444,806169
+2002,Ohio,Colon and Rectum,55.4,54.1,56.8,6685,11407889
+2002,North Dakota,Colon and Rectum,53.9,48.7,59.6,396,638168
+2002,New York,Colon and Rectum,56.9,55.8,57.9,11296,19137800
+2002,North Carolina,Colon and Rectum,50.2,48.6,51.7,4104,8326201
+2002,New Mexico,Colon and Rectum,42.7,39.7,45.8,770,1855309
+2002,New Hampshire,Colon and Rectum,57.7,53.6,62,728,1269089
+2002,New Jersey,Colon and Rectum,60.9,59.2,62.5,5482,8552643
+2002,Nevada,Colon and Rectum,53.3,50.1,56.7,1062,2173791
+2002,Nebraska,Colon and Rectum,57.9,54.4,61.5,1060,1728292
+2002,Montana,Colon and Rectum,52.1,47.7,56.8,517,911667
+2002,Oklahoma,Colon and Rectum,53.2,50.8,55.6,1930,3489080
+2002,Oregon,Colon and Rectum,47.6,45.4,49.9,1764,3513424
+2002,Pennsylvania,Colon and Rectum,58.8,57.6,60.1,8681,12331031
+2002,Rhode Island,Colon and Rectum,60.4,56.1,65,725,1065995
+2002,South Carolina,Colon and Rectum,55.7,53.4,58,2286,4107795
+2002,South Dakota,Colon and Rectum,65.4,60,71.1,551,760020
+2002,Tennessee,Colon and Rectum,46.8,45.1,48.6,2746,5795918
+2002,Texas,Colon and Rectum,50.9,49.9,52,9151,21690325
+2002,Vermont,Colon and Rectum,53.6,48.1,59.5,351,615442
+2002,Virginia,Colon and Rectum,48.3,46.6,49.9,3336,7286873
+2002,Washington,Colon and Rectum,48.3,46.5,50.2,2767,6052349
+2002,West Virginia,Colon and Rectum,63.2,59.9,66.7,1367,1805414
+2002,Wisconsin,Colon and Rectum,53.9,52,55.8,3065,5445162
+2002,Wyoming,Colon and Rectum,46,40.2,52.4,226,500017
+2002,Alabama,Colon and Rectum,50.3,48.3,52.4,2355,4480089
+2003,Delaware,Colon and Rectum,53.7,48.9,58.8,463,818003
+2003,Colorado,Colon and Rectum,45.8,43.6,48,1758,4528732
+2003,Connecticut,Colon and Rectum,54.1,51.8,56.5,2090,3484336
+2003,Arkansas,Colon and Rectum,50.8,48.3,53.5,1517,2724816
+2003,California,Colon and Rectum,47.1,46.4,47.9,14761,35253159
+2003,Nebraska,Colon and Rectum,58.1,54.6,61.7,1077,1738643
+2003,Montana,Colon and Rectum,47.4,43.3,51.9,485,919630
+2003,Mississippi,Colon and Rectum,56,53.3,58.9,1582,2868312
+2003,Missouri,Colon and Rectum,55.4,53.6,57.3,3395,5709403
+2003,Alabama,Colon and Rectum,50.1,48.1,52.1,2376,4503491
+2003,Alaska,Colon and Rectum,53.8,46.4,61.9,226,648414
+2003,Arizona,Colon and Rectum,45.1,43.4,46.9,2523,5510364
+2003,Minnesota,Colon and Rectum,49.7,47.8,51.7,2505,5053572
+2003,Michigan,Colon and Rectum,53.8,52.4,55.3,5477,10041152
+2003,Maryland,Colon and Rectum,55.3,53.3,57.3,2937,5496269
+2003,Massachusetts,Colon and Rectum,57.2,55.4,59,3971,6422565
+2003,Maine,Colon and Rectum,56.9,53.1,60.8,862,1306513
+2003,Louisiana,Colon and Rectum,58.1,55.9,60.5,2523,4521042
+2003,Kansas,Colon and Rectum,54.6,51.9,57.4,1550,2723004
+2003,Kentucky,Colon and Rectum,60.7,58.4,63.2,2558,4117170
+2003,Iowa,Colon and Rectum,57.2,54.6,59.8,1959,2941999
+2003,Illinois,Colon and Rectum,57.4,56.1,58.8,7091,12556006
+2003,Indiana,Colon and Rectum,55.6,53.7,57.5,3472,6196638
+2003,Idaho,Colon and Rectum,46.4,42.8,50.3,595,1363380
+2003,Georgia,Colon and Rectum,51.1,49.4,52.8,3724,8622793
+2003,Hawaii,Colon and Rectum,51.7,47.9,55.6,700,1251154
+2003,Florida,Colon and Rectum,52.1,51.1,53,11248,17004085
+2003,District of Columbia,Colon and Rectum,64.3,57.8,71.3,363,568502
+2003,Nevada,Colon and Rectum,49.9,46.8,53.1,1045,2248850
+2003,New Hampshire,Colon and Rectum,54.2,50.2,58.4,695,1279840
+2003,New Jersey,Colon and Rectum,57.4,55.8,59,5231,8601402
+2003,New Mexico,Colon and Rectum,44.3,41.3,47.5,817,1877574
+2003,New York,Colon and Rectum,54.9,53.9,55.9,11033,19175939
+2003,North Carolina,Colon and Rectum,49.6,48.1,51.1,4162,8422501
+2003,North Dakota,Colon and Rectum,58.8,53.4,64.7,430,638817
+2003,Ohio,Colon and Rectum,54.1,52.8,55.4,6609,11434788
+2003,Oklahoma,Colon and Rectum,52.4,50,54.8,1918,3504892
+2003,Oregon,Colon and Rectum,49.2,47,51.6,1855,3547376
+2003,Pennsylvania,Colon and Rectum,57.4,56.2,58.6,8545,12374658
+2003,Rhode Island,Colon and Rectum,52.9,48.8,57.2,638,1071342
+2003,South Carolina,Colon and Rectum,55.1,52.9,57.4,2324,4150297
+2003,South Dakota,Colon and Rectum,56,51.1,61.3,478,763729
+2003,Tennessee,Colon and Rectum,50.1,48.3,52,2990,5847812
+2003,Texas,Colon and Rectum,49.6,48.6,50.6,9142,22030931
+2003,Utah,Colon and Rectum,43.4,40.3,46.7,741,2360137
+2003,Vermont,Colon and Rectum,51.3,45.9,57.1,337,617858
+2003,Virginia,Colon and Rectum,50.6,49,52.3,3576,7366977
+2003,Washington,Colon and Rectum,48.4,46.6,50.2,2837,6104115
+2003,West Virginia,Colon and Rectum,62.7,59.4,66.1,1370,1812295
+2003,Wisconsin,Colon and Rectum,53.1,51.3,55.1,3070,5479203
+2003,Wyoming,Colon and Rectum,47.2,41.3,53.6,239,503453
+2004,Arizona,Colon and Rectum,42,40.4,43.7,2419,5652404
+2004,Utah,Colon and Rectum,38.9,36,41.9,687,2401580
+2004,Minnesota,Colon and Rectum,49.7,47.7,51.6,2541,5087713
+2004,Mississippi,Colon and Rectum,56.5,53.8,59.4,1623,2889010
+2004,Missouri,Colon and Rectum,51.3,49.5,53.1,3166,5747741
+2004,Montana,Colon and Rectum,46,42,50.3,483,930009
+2004,Nebraska,Colon and Rectum,54.6,51.3,58.1,1020,1749370
+2004,Nevada,Colon and Rectum,50.4,47.4,53.5,1095,2346222
+2004,New Hampshire,Colon and Rectum,52.1,48.2,56.1,685,1290121
+2004,New Jersey,Colon and Rectum,54.8,53.3,56.3,5039,8634561
+2004,New Mexico,Colon and Rectum,44.1,41.2,47.2,836,1903808
+2004,New York,Colon and Rectum,53.3,52.3,54.3,10827,19171567
+2004,Arkansas,Colon and Rectum,51.3,48.8,54,1548,2749686
+2004,Alabama,Colon and Rectum,51.4,49.4,53.5,2470,4530729
+2004,Massachusetts,Colon and Rectum,55.2,53.4,56.9,3851,6412281
+2004,Michigan,Colon and Rectum,50.1,48.7,51.5,5163,10055315
+2004,Maryland,Colon and Rectum,48.7,46.9,50.6,2633,5546935
+2004,Louisiana,Colon and Rectum,54.3,52.1,56.5,2396,4552238
+2004,Maine,Colon and Rectum,57.6,53.9,61.5,890,1313688
+2004,Kansas,Colon and Rectum,51,48.4,53.7,1467,2734373
+2004,Kentucky,Colon and Rectum,59.6,57.3,61.9,2546,4146101
+2004,Indiana,Colon and Rectum,53.3,51.5,55.2,3368,6233007
+2004,Iowa,Colon and Rectum,56.3,53.8,58.8,1944,2953635
+2004,Illinois,Colon and Rectum,57.8,56.4,59.1,7200,12589773
+2004,Hawaii,Colon and Rectum,52.9,49.1,56.9,737,1273569
+2004,Idaho,Colon and Rectum,44.4,40.9,48.2,585,1391802
+2004,Georgia,Colon and Rectum,51.7,50.1,53.4,3890,8769252
+2004,Florida,Colon and Rectum,51.2,50.2,52.1,11297,17415318
+2004,District of Columbia,Colon and Rectum,52.8,46.9,59.2,297,567754
+2004,Delaware,Colon and Rectum,51.5,46.9,56.5,454,830803
+2004,Colorado,Colon and Rectum,47.8,45.6,50,1899,4575013
+2004,Connecticut,Colon and Rectum,54.8,52.5,57.2,2148,3496094
+2004,California,Colon and Rectum,44.8,44.1,45.6,14311,35574576
+2004,Alaska,Colon and Rectum,55.6,48.3,63.6,248,659286
+2004,Wisconsin,Colon and Rectum,50.5,48.7,52.3,2953,5514026
+2004,Wyoming,Colon and Rectum,46.7,41,53,244,509106
+2004,South Dakota,Colon and Rectum,50.1,45.5,55.1,437,770396
+2004,Tennessee,Colon and Rectum,49.3,47.6,51.1,3010,5910809
+2004,Texas,Colon and Rectum,49.1,48.1,50.1,9314,22394023
+2004,Vermont,Colon and Rectum,46.1,41.1,51.5,313,619920
+2004,Virginia,Colon and Rectum,49.9,48.2,51.5,3608,7475575
+2004,Washington,Colon and Rectum,46.6,44.9,48.4,2799,6178645
+2004,West Virginia,Colon and Rectum,59.8,56.6,63.2,1319,1816438
+2004,Rhode Island,Colon and Rectum,55.9,51.8,60.4,680,1074579
+2004,South Carolina,Colon and Rectum,54.8,52.6,57.1,2361,4210921
+2004,Pennsylvania,Colon and Rectum,55.8,54.6,57,8338,12410722
+2004,North Carolina,Colon and Rectum,48.6,47.2,50.1,4191,8553152
+2004,North Dakota,Colon and Rectum,55,49.7,60.6,413,644705
+2004,Oregon,Colon and Rectum,47.3,45.1,49.5,1810,3569463
+2004,Ohio,Colon and Rectum,53.5,52.3,54.9,6604,11452251
+2004,Oklahoma,Colon and Rectum,50.7,48.4,53.1,1887,3525233
+2005,New Mexico,Colon and Rectum,41.2,38.4,44.2,802,1932274
+2005,Utah,Colon and Rectum,39.1,36.3,42.1,716,2457719
+2005,Washington,Colon and Rectum,46.8,45.1,48.5,2880,6257305
+2005,New Hampshire,Colon and Rectum,52.2,48.4,56.2,704,1298492
+2005,New Jersey,Colon and Rectum,55.3,53.8,56.9,5131,8651974
+2005,New York,Colon and Rectum,50.5,49.5,51.5,10356,19132610
+2005,North Carolina,Colon and Rectum,50.5,49,52,4472,8705407
+2005,North Dakota,Colon and Rectum,53.5,48.4,59.1,403,646089
+2005,West Virginia,Colon and Rectum,55.1,52,58.3,1225,1820492
+2005,Wisconsin,Colon and Rectum,45.7,44,47.5,2725,5546166
+2005,Wyoming,Colon and Rectum,45.6,40,51.8,240,514157
+2005,Hawaii,Colon and Rectum,46.7,43.2,50.5,666,1292729
+2005,Nevada,Colon and Rectum,46.6,43.8,49.6,1077,2432143
+2005,Florida,Colon and Rectum,47.8,46.9,48.7,10790,17842038
+2005,Georgia,Colon and Rectum,47.8,46.3,49.4,3749,8925922
+2005,Ohio,Colon and Rectum,51.7,50.4,53,6446,11463320
+2005,Idaho,Colon and Rectum,44,40.6,47.7,602,1428241
+2005,Illinois,Colon and Rectum,55.3,54,56.6,6973,12609903
+2005,Indiana,Colon and Rectum,53.5,51.8,55.4,3430,6278616
+2005,Oklahoma,Colon and Rectum,50.1,47.8,52.4,1875,3548597
+2005,Oregon,Colon and Rectum,46.5,44.4,48.7,1823,3613202
+2005,Iowa,Colon and Rectum,54.6,52.2,57.2,1908,2964454
+2005,Kansas,Colon and Rectum,47.9,45.4,50.5,1395,2745299
+2005,District of Columbia,Colon and Rectum,52.2,46.4,58.6,294,567136
+2005,Connecticut,Colon and Rectum,50.4,48.2,52.7,1989,3506956
+2005,Delaware,Colon and Rectum,54.1,49.4,59.1,490,845150
+2005,California,Colon and Rectum,44.9,44.2,45.6,14675,35827943
+2005,Colorado,Colon and Rectum,44.8,42.7,46.9,1826,4631888
+2005,Arizona,Colon and Rectum,42.5,40.8,44.1,2550,5839077
+2005,Arkansas,Colon and Rectum,50.5,48,53.1,1542,2781097
+2005,Kentucky,Colon and Rectum,58,55.7,60.3,2529,4182742
+2005,Louisiana,Colon and Rectum,54.5,52.4,56.8,2374,4411396
+2005,Pennsylvania,Colon and Rectum,55.2,54,56.4,8303,12449990
+2005,Rhode Island,Colon and Rectum,52.4,48.4,56.7,640,1067916
+2005,Maine,Colon and Rectum,55.2,51.6,59.1,862,1318787
+2005,Maryland,Colon and Rectum,47.2,45.4,49,2603,5592379
+2005,Massachusetts,Colon and Rectum,51.3,49.6,53,3617,6403290
+2005,Michigan,Colon and Rectum,50.1,48.7,51.5,5250,10051137
+2005,South Carolina,Colon and Rectum,50.8,48.7,52.9,2259,4270150
+2005,South Dakota,Colon and Rectum,50.3,45.7,55.2,443,775493
+2005,Minnesota,Colon and Rectum,46.8,45,48.7,2440,5119598
+2005,Mississippi,Colon and Rectum,52.8,50.2,55.5,1535,2876229
+2005,Tennessee,Colon and Rectum,52.6,50.8,54.5,3290,5991057
+2005,Texas,Colon and Rectum,47.8,46.8,48.8,9340,22773020
+2005,Missouri,Colon and Rectum,53.6,51.8,55.4,3360,5790300
+2005,Montana,Colon and Rectum,45.6,41.6,49.9,485,940102
+2005,Vermont,Colon and Rectum,45,40.1,50.3,312,621215
+2005,Virginia,Colon and Rectum,47.7,46.1,49.3,3532,7577105
+2005,Nebraska,Colon and Rectum,58.4,54.9,61.9,1106,1761497
+2005,Alabama,Colon and Rectum,50.7,48.7,52.7,2475,4565917
+2005,Alaska,Colon and Rectum,55.3,48,63.4,241,666946
+2006,Idaho,Colon and Rectum,40.7,37.4,44.2,576,1468669
+2006,New Mexico,Colon and Rectum,42.1,39.3,45,848,1962137
+2006,Colorado,Colon and Rectum,41.5,39.5,43.5,1762,4720423
+2006,Utah,Colon and Rectum,37.3,34.6,40.2,713,2525507
+2006,Arizona,Colon and Rectum,37.7,36.2,39.3,2335,6029141
+2006,South Dakota,Colon and Rectum,46.6,42.2,51.4,415,783033
+2006,Tennessee,Colon and Rectum,49.5,47.8,51.3,3192,6088766
+2006,Texas,Colon and Rectum,45.4,44.5,46.4,9209,23359580
+2006,Vermont,Colon and Rectum,49.2,44.1,54.7,345,622892
+2006,Virginia,Colon and Rectum,45.2,43.7,46.7,3438,7673725
+2006,Washington,Colon and Rectum,43.3,41.7,45,2748,6370753
+2006,West Virginia,Colon and Rectum,54.6,51.5,57.7,1231,1827912
+2006,Wisconsin,Colon and Rectum,46.1,44.4,47.9,2776,5577655
+2006,Wyoming,Colon and Rectum,49.3,43.4,55.8,259,522667
+2006,Arkansas,Colon and Rectum,47.5,45.1,50,1483,2821761
+2006,North Carolina,Colon and Rectum,47.9,46.5,49.3,4405,8917270
+2006,Alabama,Colon and Rectum,49.9,47.9,51.9,2501,4628981
+2006,Alaska,Colon and Rectum,53.8,46.9,61.5,255,675302
+2006,South Carolina,Colon and Rectum,48.1,46.1,50.2,2220,4357847
+2006,California,Colon and Rectum,44.3,43.6,45,14699,36021202
+2006,Pennsylvania,Colon and Rectum,53.4,52.2,54.6,8108,12510809
+2006,Rhode Island,Colon and Rectum,52.6,48.6,56.9,644,1063096
+2006,North Dakota,Colon and Rectum,50.5,45.5,55.9,385,649422
+2006,Ohio,Colon and Rectum,51.5,50.3,52.8,6496,11481213
+2006,Oklahoma,Colon and Rectum,50.1,47.8,52.4,1910,3594090
+2006,Minnesota,Colon and Rectum,45.6,43.8,47.5,2406,5163555
+2006,Mississippi,Colon and Rectum,54.2,51.6,56.9,1603,2904978
+2006,Missouri,Colon and Rectum,51.7,50,53.5,3308,5842704
+2006,Montana,Colon and Rectum,47.5,43.5,51.8,518,952692
+2006,Nebraska,Colon and Rectum,55.9,52.6,59.3,1075,1772693
+2006,Nevada,Colon and Rectum,49.7,46.8,52.7,1162,2522658
+2006,New Hampshire,Colon and Rectum,45.1,41.6,48.9,624,1308389
+2006,New Jersey,Colon and Rectum,51.2,49.7,52.6,4788,8661679
+2006,New York,Colon and Rectum,48.8,47.9,49.8,10059,19104631
+2006,Illinois,Colon and Rectum,55.1,53.8,56.4,7042,12643955
+2006,Indiana,Colon and Rectum,51.8,50.1,53.6,3383,6332669
+2006,Iowa,Colon and Rectum,54.6,52.1,57.1,1903,2982644
+2006,Kansas,Colon and Rectum,49.5,47,52.1,1462,2762931
+2006,Kentucky,Colon and Rectum,55.9,53.7,58.1,2490,4219239
+2006,Louisiana,Colon and Rectum,54.1,52,56.4,2355,4302665
+2006,Maine,Colon and Rectum,50.8,47.3,54.4,814,1323619
+2006,Maryland,Colon and Rectum,44.5,42.8,46.3,2501,5627367
+2006,Massachusetts,Colon and Rectum,48.7,47.1,50.4,3468,6410084
+2006,Michigan,Colon and Rectum,49.4,48,50.8,5229,10036081
+2006,Georgia,Colon and Rectum,48.3,46.8,49.8,3928,9155813
+2006,Hawaii,Colon and Rectum,48.1,44.6,51.8,701,1309731
+2006,District of Columbia,Colon and Rectum,47.1,41.6,53.2,267,570681
+2006,Florida,Colon and Rectum,46.8,45.9,47.7,10696,18166990
+2006,Delaware,Colon and Rectum,53.6,48.9,58.5,499,859268
+2006,Connecticut,Colon and Rectum,48.8,46.7,51.1,1942,3517460
+2006,Oregon,Colon and Rectum,43.9,41.9,46.1,1768,3670883
+2007,New Mexico,Colon and Rectum,40.7,38,43.5,849,1990070
+2007,Oregon,Colon and Rectum,41.9,39.9,44,1734,3722417
+2007,Washington,Colon and Rectum,40.8,39.3,42.4,2667,6461587
+2007,Wyoming,Colon and Rectum,40.5,35.3,46.3,225,534876
+2007,Idaho,Colon and Rectum,41.7,38.4,45.2,608,1505105
+2007,Arizona,Colon and Rectum,38.9,37.3,40.4,2487,6167681
+2007,Colorado,Colon and Rectum,40.9,39,42.9,1801,4803868
+2007,Alaska,Colon and Rectum,41.9,35.9,48.5,210,680300
+2007,Minnesota,Colon and Rectum,46.5,44.7,48.3,2528,5207203
+2007,Michigan,Colon and Rectum,47.6,46.3,49,5148,10001284
+2007,Montana,Colon and Rectum,46.3,42.4,50.5,523,964706
+2007,Nevada,Colon and Rectum,42.7,40.1,45.4,1052,2601072
+2007,New Hampshire,Colon and Rectum,46.8,43.3,50.6,667,1312540
+2007,New York,Colon and Rectum,48.7,47.8,49.7,10167,19132335
+2007,Florida,Colon and Rectum,44.9,44,45.8,10440,18367842
+2007,Georgia,Colon and Rectum,47.6,46.2,49.2,4029,9349988
+2007,North Carolina,Colon and Rectum,45.4,44.1,46.8,4312,9118037
+2007,Hawaii,Colon and Rectum,46.4,43,50.1,692,1315675
+2007,Virginia,Colon and Rectum,43.9,42.4,45.4,3405,7751000
+2007,Wisconsin,Colon and Rectum,45.3,43.6,47.1,2778,5610775
+2007,South Carolina,Colon and Rectum,47.1,45.1,49.1,2247,4444110
+2007,Tennessee,Colon and Rectum,48.2,46.5,49.9,3184,6175727
+2007,Texas,Colon and Rectum,45,44.1,45.9,9419,23831983
+2007,Vermont,Colon and Rectum,42.8,38.1,48,307,623481
+2007,Utah,Colon and Rectum,36.7,34.1,39.5,727,2597746
+2007,Mississippi,Colon and Rectum,52.5,49.9,55.2,1584,2928350
+2007,Missouri,Colon and Rectum,49.6,47.9,51.4,3215,5887612
+2007,Nebraska,Colon and Rectum,55.9,52.6,59.4,1087,1783440
+2007,District of Columbia,Colon and Rectum,55.4,49.4,62,311,574404
+2007,New Jersey,Colon and Rectum,49.1,47.7,50.5,4666,8677885
+2007,North Dakota,Colon and Rectum,57.7,52.4,63.5,442,652822
+2007,Ohio,Colon and Rectum,49.2,48,50.4,6306,11500468
+2007,Oklahoma,Colon and Rectum,49.3,47.1,51.6,1925,3634349
+2007,Pennsylvania,Colon and Rectum,51.2,50,52.3,7847,12563937
+2007,Rhode Island,Colon and Rectum,49.8,45.8,54,606,1057315
+2007,West Virginia,Colon and Rectum,53.3,50.3,56.4,1221,1834052
+2007,South Dakota,Colon and Rectum,52.9,48.2,57.9,478,791623
+2007,Maine,Colon and Rectum,50,46.6,53.6,817,1327040
+2007,Maryland,Colon and Rectum,44.6,42.9,46.4,2544,5653408
+2007,Massachusetts,Colon and Rectum,46.4,44.8,48,3353,6431559
+2007,Iowa,Colon and Rectum,51,48.6,53.4,1805,2999212
+2007,Kansas,Colon and Rectum,47.6,45.1,50.1,1421,2783785
+2007,Indiana,Colon and Rectum,50.1,48.4,51.9,3331,6379599
+2007,Illinois,Colon and Rectum,52.7,51.4,54,6824,12695866
+2007,Louisiana,Colon and Rectum,53.7,51.6,55.9,2410,4375581
+2007,Kentucky,Colon and Rectum,56.1,53.9,58.4,2557,4256672
+2007,Delaware,Colon and Rectum,49.7,45.3,54.5,476,871749
+2007,Arkansas,Colon and Rectum,46.7,44.3,49.2,1484,2848650
+2007,California,Colon and Rectum,44.5,43.8,45.2,15100,36250311
+2007,Connecticut,Colon and Rectum,45.7,43.7,47.9,1852,3527270
+2007,Alabama,Colon and Rectum,49.6,47.7,51.6,2527,4672840
+2008,New Mexico,Colon and Rectum,38.4,35.8,41.2,820,2010662
+2008,Oregon,Colon and Rectum,41.6,39.7,43.7,1759,3768748
+2008,Arizona,Colon and Rectum,38.8,37.3,40.3,2532,6280362
+2008,Colorado,Colon and Rectum,38.5,36.6,40.3,1751,4889730
+2008,Idaho,Colon and Rectum,41.4,38.2,44.8,632,1534320
+2008,Washington,Colon and Rectum,41.7,40.1,43.3,2795,6562231
+2008,Vermont,Colon and Rectum,41.6,36.9,46.7,300,624151
+2008,Virginia,Colon and Rectum,40.8,39.4,42.3,3242,7833496
+2008,Kansas,Colon and Rectum,47.7,45.2,50.3,1434,2808076
+2008,Maine,Colon and Rectum,44.8,41.6,48.1,744,1330509
+2008,Maryland,Colon and Rectum,43.4,41.7,45.1,2528,5684965
+2008,Massachusetts,Colon and Rectum,44.8,43.2,46.3,3280,6468967
+2008,Michigan,Colon and Rectum,44.4,43.1,45.7,4842,9946889
+2008,Minnesota,Colon and Rectum,45.3,43.5,47.1,2506,5247018
+2008,Missouri,Colon and Rectum,48.7,47,50.5,3215,5923916
+2008,Montana,Colon and Rectum,47.5,43.6,51.8,546,976415
+2008,Nevada,Colon and Rectum,44.2,41.6,46.9,1121,2653630
+2008,New Hampshire,Colon and Rectum,46.6,43.2,50.4,679,1315906
+2008,New Jersey,Colon and Rectum,47.9,46.5,49.3,4617,8711090
+2008,New York,Colon and Rectum,47.1,46.1,48,9944,19212436
+2008,North Carolina,Colon and Rectum,43.5,42.2,44.8,4248,9309449
+2008,Ohio,Colon and Rectum,48.3,47.1,49.5,6272,11515391
+2008,Oklahoma,Colon and Rectum,45.9,43.8,48.1,1807,3668976
+2008,Pennsylvania,Colon and Rectum,48.7,47.6,49.9,7558,12612285
+2008,Rhode Island,Colon and Rectum,44,40.3,47.9,551,1055003
+2008,South Carolina,Colon and Rectum,44.6,42.8,46.6,2196,4528996
+2008,Utah,Colon and Rectum,37.1,34.5,39.9,761,2663029
+2008,Wyoming,Colon and Rectum,38.1,33.1,43.6,219,546043
+2008,South Dakota,Colon and Rectum,47.6,43.2,52.3,441,799124
+2008,Tennessee,Colon and Rectum,48,46.3,49.7,3239,6247411
+2008,Texas,Colon and Rectum,43,42.1,43.8,9295,24309039
+2008,Alaska,Colon and Rectum,47.5,41.2,54.5,244,687455
+2008,Arkansas,Colon and Rectum,47.6,45.2,50.1,1537,2874554
+2008,California,Colon and Rectum,44.3,43.6,45.1,15404,36604337
+2008,Connecticut,Colon and Rectum,44.5,42.5,46.6,1827,3545579
+2008,Indiana,Colon and Rectum,49,47.3,50.7,3328,6424806
+2008,Iowa,Colon and Rectum,51.4,49,53.8,1837,3016734
+2008,Kentucky,Colon and Rectum,54.4,52.3,56.6,2522,4289878
+2008,Louisiana,Colon and Rectum,53.2,51.1,55.4,2414,4435586
+2008,Mississippi,Colon and Rectum,53.1,50.5,55.7,1625,2947806
+2008,Nebraska,Colon and Rectum,53.1,49.9,56.4,1049,1796378
+2008,North Dakota,Colon and Rectum,52.8,47.8,58.2,418,657569
+2008,Alabama,Colon and Rectum,50.6,48.6,52.6,2631,4718206
+2008,Delaware,Colon and Rectum,45.9,41.8,50.4,453,883874
+2008,District of Columbia,Colon and Rectum,42.8,37.6,48.7,245,580236
+2008,Florida,Colon and Rectum,45,44.1,45.9,10695,18527305
+2008,Georgia,Colon and Rectum,44.1,42.7,45.6,3865,9504843
+2008,Hawaii,Colon and Rectum,48.6,45.1,52.2,747,1332213
+2008,Illinois,Colon and Rectum,50.9,49.7,52.2,6713,12747038
+2008,West Virginia,Colon and Rectum,52.3,49.4,55.4,1211,1840310
+2008,Wisconsin,Colon and Rectum,45.2,43.6,47,2828,5640996
+2009,Texas,Colon and Rectum,41.7,40.8,42.6,9330,24801761
+2009,Minnesota,Colon and Rectum,41.5,39.8,43.2,2338,5281203
+2009,New Hampshire,Colon and Rectum,40.9,37.7,44.4,610,1316102
+2009,North Carolina,Colon and Rectum,41.7,40.4,43,4172,9449566
+2009,Oregon,Colon and Rectum,41.1,39.1,43.1,1753,3808600
+2009,Maryland,Colon and Rectum,39.7,38.1,41.3,2392,5730388
+2009,South Carolina,Colon and Rectum,41.6,39.9,43.5,2102,4589872
+2009,Rhode Island,Colon and Rectum,42.1,38.6,46,528,1053646
+2009,Wyoming,Colon and Rectum,39.9,34.8,45.5,234,559851
+2009,Vermont,Colon and Rectum,42.1,37.5,47.1,313,624817
+2009,Virginia,Colon and Rectum,40.9,39.5,42.4,3352,7925937
+2009,Washington,Colon and Rectum,41.9,40.3,43.4,2883,6667426
+2009,California,Colon and Rectum,42.1,41.4,42.8,15031,36961229
+2009,Idaho,Colon and Rectum,40.5,37.4,43.8,635,1554439
+2009,Florida,Colon and Rectum,41.5,40.7,42.3,10058,18652644
+2009,Tennessee,Colon and Rectum,44,42.4,45.6,3019,6306019
+2009,Massachusetts,Colon and Rectum,43.3,41.8,44.8,3222,6517613
+2009,Michigan,Colon and Rectum,43.2,41.9,44.4,4801,9901591
+2009,Missouri,Colon and Rectum,45.6,43.9,47.2,3044,5961088
+2009,Montana,Colon and Rectum,43,39.2,47,506,983982
+2009,Nebraska,Colon and Rectum,47.2,44.2,50.4,948,1812683
+2009,Nevada,Colon and Rectum,43.7,41.2,46.4,1142,2684665
+2009,New Jersey,Colon and Rectum,46.1,44.7,47.5,4496,8755602
+2009,New York,Colon and Rectum,44.4,43.5,45.3,9518,19307066
+2009,North Dakota,Colon and Rectum,46.2,41.5,51.3,359,664968
+2009,Ohio,Colon and Rectum,46.3,45.1,47.4,6079,11528896
+2009,Oklahoma,Colon and Rectum,47.1,44.9,49.2,1902,3717572
+2009,Maine,Colon and Rectum,45.7,42.5,49.1,769,1329590
+2009,Kansas,Colon and Rectum,44.8,42.4,47.3,1364,2832704
+2009,Iowa,Colon and Rectum,47.8,45.5,50.1,1745,3032870
+2009,Illinois,Colon and Rectum,47.1,45.9,48.3,6292,12796778
+2009,Indiana,Colon and Rectum,46.6,44.9,48.2,3204,6459325
+2009,Pennsylvania,Colon and Rectum,47.6,46.5,48.7,7442,12666858
+2009,Wisconsin,Colon and Rectum,42.5,40.9,44.2,2700,5669264
+2009,Arkansas,Colon and Rectum,44.6,42.4,47,1468,2896843
+2009,Alabama,Colon and Rectum,46.8,44.9,48.7,2474,4757938
+2009,Georgia,Colon and Rectum,43.7,42.3,45.1,3912,9620846
+2009,Hawaii,Colon and Rectum,46.8,43.4,50.4,737,1346717
+2009,Delaware,Colon and Rectum,42.1,38.1,46.3,430,891730
+2009,Connecticut,Colon and Rectum,43.9,41.8,46,1826,3561807
+2009,District of Columbia,Colon and Rectum,48.1,42.5,54.2,275,592228
+2009,Utah,Colon and Rectum,33,30.6,35.5,701,2723421
+2009,Colorado,Colon and Rectum,35.9,34.2,37.7,1700,4972195
+2009,New Mexico,Colon and Rectum,37.5,34.9,40.1,832,2036802
+2009,Arizona,Colon and Rectum,38.2,36.7,39.7,2590,6343154
+2009,Mississippi,Colon and Rectum,50.3,47.8,52.9,1558,2958774
+2009,Louisiana,Colon and Rectum,50.1,48,52.2,2337,4491648
+2009,Kentucky,Colon and Rectum,54,51.9,56.1,2546,4317074
+2009,South Dakota,Colon and Rectum,50.4,45.9,55.2,470,807067
+2009,West Virginia,Colon and Rectum,49.4,46.6,52.4,1159,1847775
+2009,Alaska,Colon and Rectum,51.2,44.9,58.1,286,698895
+2010,California,Colon and Rectum,40,39.4,40.7,14707,37332685
+2010,Connecticut,Colon and Rectum,41.3,39.4,43.4,1750,3579899
+2010,Florida,Colon and Rectum,38.7,37.9,39.5,9559,18849098
+2010,Georgia,Colon and Rectum,41.2,39.9,42.5,3825,9713521
+2010,Texas,Colon and Rectum,40.4,39.6,41.2,9286,25244310
+2010,Wisconsin,Colon and Rectum,40.2,38.6,41.8,2593,5690263
+2010,Maine,Colon and Rectum,39.9,36.9,43.1,675,1327730
+2010,Maryland,Colon and Rectum,38.4,36.8,40,2345,5788584
+2010,Massachusetts,Colon and Rectum,39.7,38.2,41.1,2997,6565524
+2010,Michigan,Colon and Rectum,41.1,39.9,42.4,4639,9877495
+2010,Minnesota,Colon and Rectum,41.2,39.5,42.9,2365,5311147
+2010,Nevada,Colon and Rectum,41.6,39.1,44.2,1130,2703284
+2010,North Carolina,Colon and Rectum,39.8,38.6,41,4092,9558915
+2010,Ohio,Colon and Rectum,42,40.9,43.1,5598,11540983
+2010,Rhode Island,Colon and Rectum,41,37.4,44.8,509,1053337
+2010,Iowa,Colon and Rectum,46.6,44.4,48.9,1703,3050738
+2010,Kansas,Colon and Rectum,43.2,40.9,45.6,1343,2858850
+2010,Illinois,Colon and Rectum,46.8,45.6,47.9,6357,12841578
+2010,Indiana,Colon and Rectum,45.3,43.7,46.9,3147,6490528
+2010,Alabama,Colon and Rectum,44.2,42.4,46,2376,4785492
+2010,Arkansas,Colon and Rectum,43.3,41,45.6,1441,2921995
+2010,Delaware,Colon and Rectum,42.5,38.6,46.7,445,899816
+2010,District of Columbia,Colon and Rectum,46.3,40.9,52.2,273,605183
+2010,Hawaii,Colon and Rectum,46.2,42.8,49.7,738,1363945
+2010,Tennessee,Colon and Rectum,43.5,42,45.1,3057,6356671
+2010,West Virginia,Colon and Rectum,45.8,43,48.7,1073,1854230
+2010,Wyoming,Colon and Rectum,43.3,38.1,49,262,564513
+2010,Missouri,Colon and Rectum,44.4,42.8,46.1,3010,5996118
+2010,Montana,Colon and Rectum,43.8,40.1,47.8,530,990641
+2010,Nebraska,Colon and Rectum,46.3,43.4,49.4,945,1830051
+2010,New Jersey,Colon and Rectum,44.1,42.8,45.4,4382,8803729
+2010,New York,Colon and Rectum,43.5,42.6,44.4,9431,19402640
+2010,North Dakota,Colon and Rectum,47.2,42.4,52.4,367,674526
+2010,Oklahoma,Colon and Rectum,42.2,40.2,44.3,1729,3759603
+2010,Pennsylvania,Colon and Rectum,44.5,43.5,45.6,7012,12712343
+2010,South Carolina,Colon and Rectum,42.2,40.4,44,2190,4635943
+2010,Utah,Colon and Rectum,31.6,29.2,34.1,694,2775326
+2010,Colorado,Colon and Rectum,35,33.3,36.8,1702,5048644
+2010,Idaho,Colon and Rectum,35.6,32.7,38.7,574,1571010
+2010,New Hampshire,Colon and Rectum,34.6,31.7,37.8,529,1316872
+2010,Arizona,Colon and Rectum,36.5,35.1,37.9,2542,6408312
+2010,Vermont,Colon and Rectum,37,32.8,41.7,287,625982
+2010,Virginia,Colon and Rectum,37.8,36.4,39.1,3163,8025773
+2010,Washington,Colon and Rectum,37.9,36.5,39.4,2687,6743226
+2010,New Mexico,Colon and Rectum,36.2,33.7,38.8,820,2064756
+2010,Oregon,Colon and Rectum,37.9,36.1,39.9,1661,3838048
+2010,Kentucky,Colon and Rectum,51.3,49.3,53.4,2468,4348662
+2010,Alaska,Colon and Rectum,48.8,42.7,55.5,281,714031
+2010,Louisiana,Colon and Rectum,51.3,49.3,53.4,2449,4544996
+2010,Mississippi,Colon and Rectum,52.2,49.7,54.8,1647,2970322
+2010,South Dakota,Colon and Rectum,51.8,47.2,56.7,488,816325
+2011,Arkansas,Colon and Rectum,42.2,40,44.4,1432,2939493
+2011,District of Columbia,Colon and Rectum,44.6,39.3,50.4,267,620477
+2011,Indiana,Colon and Rectum,44.4,42.8,46,3159,6516480
+2011,Iowa,Colon and Rectum,45.9,43.7,48.2,1694,3065223
+2011,Illinois,Colon and Rectum,46.7,45.6,47.9,6441,12860012
+2011,Hawaii,Colon and Rectum,45.3,42,48.7,740,1377864
+2011,Louisiana,Colon and Rectum,48.3,46.3,50.4,2343,4575404
+2011,Missouri,Colon and Rectum,43.6,42,45.2,3008,6010717
+2011,Nebraska,Colon and Rectum,45,42.1,48.1,918,1842283
+2011,New Jersey,Colon and Rectum,43.4,42.1,44.7,4362,8841243
+2011,North Dakota,Colon and Rectum,45.3,40.7,50.4,366,685476
+2011,Ohio,Colon and Rectum,42.3,41.2,43.5,5700,11544824
+2011,Oklahoma,Colon and Rectum,42.3,40.3,44.3,1767,3786274
+2011,Pennsylvania,Colon and Rectum,44.8,43.7,45.9,7124,12744293
+2011,South Dakota,Colon and Rectum,46,41.8,50.7,444,824398
+2011,West Virginia,Colon and Rectum,48.1,45.3,51.1,1149,1854972
+2011,Utah,Colon and Rectum,32.9,30.6,35.4,735,2816124
+2011,Arizona,Colon and Rectum,35,33.7,36.5,2500,6467163
+2011,Colorado,Colon and Rectum,35,33.3,36.7,1731,5118360
+2011,New Mexico,Colon and Rectum,36,33.6,38.6,835,2077756
+2011,Wyoming,Colon and Rectum,36,31.3,41.3,222,567725
+2011,California,Colon and Rectum,38.2,37.5,38.8,14389,37676861
+2011,Massachusetts,Colon and Rectum,38.3,36.9,39.7,2936,6611923
+2011,Oregon,Colon and Rectum,36.9,35.1,38.8,1649,3868031
+2011,Rhode Island,Colon and Rectum,38,34.6,41.7,482,1052451
+2011,Virginia,Colon and Rectum,36.7,35.4,38,3145,8110035
+2011,Washington,Colon and Rectum,37.6,36.2,39.1,2705,6822520
+2011,Alabama,Colon and Rectum,42.1,40.4,43.9,2311,4799918
+2011,Alaska,Colon and Rectum,40.9,35.6,46.7,260,722713
+2011,Connecticut,Colon and Rectum,39.5,37.6,41.5,1676,3589893
+2011,Delaware,Colon and Rectum,38.4,34.7,42.5,404,907924
+2011,Kansas,Colon and Rectum,40.6,38.4,43,1267,2869503
+2011,Florida,Colon and Rectum,39.5,38.8,40.3,9992,19096952
+2011,Georgia,Colon and Rectum,42.1,40.7,43.4,3982,9811610
+2011,Idaho,Colon and Rectum,39.1,36.1,42.3,641,1584143
+2011,Maine,Colon and Rectum,39,36,42.2,656,1328231
+2011,Maryland,Colon and Rectum,38.6,37.1,40.2,2430,5843603
+2011,Michigan,Colon and Rectum,39.4,38.2,40.6,4498,9876213
+2011,Minnesota,Colon and Rectum,39.3,37.7,41,2301,5348562
+2011,Montana,Colon and Rectum,38.9,35.4,42.7,474,997821
+2011,Nevada,Colon and Rectum,41.7,39.3,44.3,1157,2718379
+2011,New Hampshire,Colon and Rectum,41.6,38.4,45.1,650,1318473
+2011,New York,Colon and Rectum,41.8,41,42.7,9174,19519529
+2011,North Carolina,Colon and Rectum,39,37.8,40.3,4105,9650963
+2011,South Carolina,Colon and Rectum,39.8,38.1,41.6,2115,4672637
+2011,Tennessee,Colon and Rectum,40.8,39.3,42.4,2924,6397634
+2011,Texas,Colon and Rectum,39.1,38.3,39.9,9299,25646389
+2011,Vermont,Colon and Rectum,39.2,34.8,44,304,626730
+2011,Wisconsin,Colon and Rectum,40.1,38.6,41.7,2635,5709640
+2011,Kentucky,Colon and Rectum,50,48,52,2445,4369354
+2011,Mississippi,Colon and Rectum,49.4,46.9,51.9,1597,2978162
+2012,Tennessee,Colon and Rectum,41.6,40.1,43.1,3048,6454306
+2012,Texas,Colon and Rectum,38.6,37.8,39.4,9477,26071655
+2012,Vermont,Colon and Rectum,39.9,35.5,44.8,310,626444
+2012,Alabama,Colon and Rectum,44.1,42.3,45.9,2436,4815960
+2012,Arkansas,Colon and Rectum,42.4,40.2,44.7,1452,2950685
+2012,Illinois,Colon and Rectum,43.9,42.8,45.1,6164,12870798
+2012,Indiana,Colon and Rectum,42.8,41.3,44.4,3104,6537743
+2012,Iowa,Colon and Rectum,44.8,42.6,47.1,1651,3076310
+2012,Mississippi,Colon and Rectum,48.7,46.3,51.2,1595,2984945
+2012,Missouri,Colon and Rectum,43.4,41.8,45,3034,6025415
+2012,Nebraska,Colon and Rectum,43.8,40.9,46.8,903,1855725
+2012,New Jersey,Colon and Rectum,42.6,41.4,44,4382,8873211
+2012,Oklahoma,Colon and Rectum,43.7,41.7,45.8,1838,3817054
+2012,Pennsylvania,Colon and Rectum,43,42,44,6924,12771854
+2012,West Virginia,Colon and Rectum,45.5,42.8,48.4,1100,1856560
+2012,Utah,Colon and Rectum,30.5,28.3,32.9,703,2855782
+2012,Colorado,Colon and Rectum,34.1,32.5,35.8,1765,5189867
+2012,New Mexico,Colon and Rectum,33.1,30.7,35.6,766,2083784
+2012,Arizona,Colon and Rectum,34.8,33.5,36.2,2573,6549634
+2012,Delaware,Colon and Rectum,35.3,31.8,39.1,385,916993
+2012,Idaho,Colon and Rectum,35.8,33,38.9,601,1595911
+2012,Florida,Colon and Rectum,37.2,36.4,38,9636,19344156
+2012,California,Colon and Rectum,36.9,36.3,37.5,14250,38011074
+2012,Maryland,Colon and Rectum,36.9,35.4,38.4,2357,5889651
+2012,Massachusetts,Colon and Rectum,37.2,35.8,38.6,2884,6658008
+2012,Minnesota,Colon and Rectum,37.7,36.1,39.3,2246,5380285
+2012,Montana,Colon and Rectum,36.1,32.8,39.8,451,1005196
+2012,New Hampshire,Colon and Rectum,37.9,34.8,41.2,598,1321182
+2012,North Carolina,Colon and Rectum,37.1,36,38.3,4017,9746175
+2012,Oregon,Colon and Rectum,36.2,34.4,38,1650,3899116
+2012,Rhode Island,Colon and Rectum,37.1,33.8,40.7,478,1052901
+2012,Virginia,Colon and Rectum,37.3,36,38.6,3278,8192048
+2012,Washington,Colon and Rectum,36.1,34.7,37.5,2689,6895226
+2012,Wisconsin,Colon and Rectum,38,36.6,39.6,2547,5726177
+2012,Wyoming,Colon and Rectum,37.1,32.3,42.3,230,576765
+2012,Georgia,Colon and Rectum,42.1,40.8,43.5,4143,9914668
+2012,District of Columbia,Colon and Rectum,41.3,36.3,46.9,252,635327
+2012,Alaska,Colon and Rectum,40.4,35.1,46.2,247,731089
+2012,Connecticut,Colon and Rectum,40.6,38.7,42.6,1761,3593795
+2012,Hawaii,Colon and Rectum,42,38.9,45.4,700,1391820
+2012,Kansas,Colon and Rectum,41.9,39.7,44.3,1341,2885262
+2012,Maine,Colon and Rectum,38.3,35.3,41.4,666,1328895
+2012,Michigan,Colon and Rectum,38.7,37.6,39.9,4513,9887238
+2012,Nevada,Colon and Rectum,39.2,36.9,41.6,1128,2752565
+2012,New York,Colon and Rectum,39.4,38.6,40.3,8795,19602769
+2012,Ohio,Colon and Rectum,40.8,39.7,41.9,5596,11550839
+2012,South Carolina,Colon and Rectum,39.1,37.4,40.8,2138,4720760
+2012,South Dakota,Colon and Rectum,41.3,37.3,45.6,409,834441
+2012,Kentucky,Colon and Rectum,50.2,48.2,52.3,2507,4384799
+2012,Louisiana,Colon and Rectum,49,47.1,51.1,2423,4603429
+2012,North Dakota,Colon and Rectum,50.9,46,56.3,405,702087
+2013,South Dakota,Colon and Rectum,41.6,37.6,45.9,422,844922
+2013,Nebraska,Colon and Rectum,41.3,38.6,44.2,870,1868559
+2013,Missouri,Colon and Rectum,41.4,39.9,43,2961,6042711
+2013,Montana,Colon and Rectum,39.2,35.8,42.9,502,1014314
+2013,Minnesota,Colon and Rectum,39,37.4,40.7,2394,5418521
+2013,Kansas,Colon and Rectum,39.3,37.2,41.6,1275,2892821
+2013,Georgia,Colon and Rectum,41.3,40,42.6,4185,9984938
+2013,Alabama,Colon and Rectum,44.3,42.6,46.1,2513,4829479
+2013,Alaska,Colon and Rectum,43.6,38.2,49.5,276,736879
+2013,Arkansas,Colon and Rectum,43.9,41.7,46.2,1535,2958663
+2013,District of Columbia,Colon and Rectum,42.2,37.1,47.8,256,649165
+2013,Oklahoma,Colon and Rectum,43.1,41.1,45.1,1862,3852415
+2013,North Dakota,Colon and Rectum,47,42.3,52.2,384,724019
+2013,Pennsylvania,Colon and Rectum,42.8,41.8,43.8,6979,12781338
+2013,West Virginia,Colon and Rectum,47.7,45,50.6,1167,1853231
+2013,Louisiana,Colon and Rectum,45.3,43.4,47.2,2293,4626402
+2013,Iowa,Colon and Rectum,43.5,41.4,45.7,1627,3091930
+2013,Indiana,Colon and Rectum,43.4,41.9,45,3169,6569102
+2013,Illinois,Colon and Rectum,43.5,42.4,44.6,6207,12879505
+2013,Hawaii,Colon and Rectum,42.5,39.3,45.8,718,1406481
+2013,Wyoming,Colon and Rectum,32.6,28.3,37.5,212,582684
+2013,Utah,Colon and Rectum,32.2,29.9,34.6,763,2902663
+2013,Arizona,Colon and Rectum,32.9,31.6,34.2,2508,6624617
+2013,Colorado,Colon and Rectum,34.4,32.8,36.1,1844,5267603
+2013,New Mexico,Colon and Rectum,32.8,30.5,35.2,786,2085193
+2013,Vermont,Colon and Rectum,33.5,29.5,37.9,268,627140
+2013,California,Colon and Rectum,35.5,34.9,36.1,14141,38335203
+2013,Delaware,Colon and Rectum,35.2,31.7,38.9,393,925395
+2013,Rhode Island,Colon and Rectum,35.7,32.5,39.3,462,1053033
+2013,Oregon,Colon and Rectum,35.6,33.9,37.4,1663,3925751
+2013,Washington,Colon and Rectum,35.7,34.3,37.1,2746,6968006
+2013,Virginia,Colon and Rectum,35.8,34.6,37.1,3225,8262692
+2013,Idaho,Colon and Rectum,35.6,32.8,38.6,614,1612011
+2013,Florida,Colon and Rectum,36.9,36.1,37.6,9781,19582022
+2013,Connecticut,Colon and Rectum,36.6,34.7,38.4,1589,3596003
+2013,Nevada,Colon and Rectum,38,35.8,40.4,1133,2786464
+2013,New Hampshire,Colon and Rectum,38.1,35.1,41.3,626,1322687
+2013,North Carolina,Colon and Rectum,37.5,36.4,38.7,4171,9841590
+2013,Wisconsin,Colon and Rectum,37.3,35.8,38.8,2529,5742854
+2013,Texas,Colon and Rectum,38,37.2,38.7,9599,26473525
+2013,South Carolina,Colon and Rectum,37.5,35.8,39.1,2107,4767894
+2013,Maryland,Colon and Rectum,36.3,34.9,37.9,2373,5931129
+2013,Massachusetts,Colon and Rectum,36.5,35.2,37.9,2880,6706786
+2013,Michigan,Colon and Rectum,37.7,36.6,38.9,4440,9898982
+2013,Maine,Colon and Rectum,37.7,34.9,40.7,691,1329076
+2013,New Jersey,Colon and Rectum,41.5,40.2,42.8,4295,8899162
+2013,New York,Colon and Rectum,40,39.1,40.8,9057,19673546
+2013,Ohio,Colon and Rectum,41.1,40.1,42.2,5725,11570022
+2013,Tennessee,Colon and Rectum,38.7,37.3,40.2,2897,6494821
+2013,Mississippi,Colon and Rectum,49.5,47.1,52,1674,2990482
+2013,Kentucky,Colon and Rectum,49.5,47.6,51.5,2505,4400477
+2014,District of Columbia,Colon and Rectum,46,40.7,51.7,288,659005
+2014,North Dakota,Colon and Rectum,43.3,38.8,48.1,358,739904
+2014,Ohio,Colon and Rectum,42.2,41.1,43.3,5917,11594408
+2014,Illinois,Colon and Rectum,42.7,41.6,43.8,6185,12867544
+2014,Indiana,Colon and Rectum,42.4,40.9,43.9,3175,6595233
+2014,Iowa,Colon and Rectum,46.7,44.5,49,1761,3108030
+2014,Louisiana,Colon and Rectum,45.7,43.9,47.6,2364,4647880
+2014,Mississippi,Colon and Rectum,46.6,44.3,49,1591,2992400
+2014,Alabama,Colon and Rectum,44.4,42.7,46.2,2537,4843214
+2014,Alaska,Colon and Rectum,42.8,37.4,48.7,266,736705
+2014,Arkansas,Colon and Rectum,44.8,42.6,47.1,1576,2966912
+2014,Nebraska,Colon and Rectum,42.3,39.6,45.2,917,1881145
+2014,South Dakota,Colon and Rectum,44.7,40.5,49.1,451,852561
+2014,West Virginia,Colon and Rectum,47,44.2,49.9,1141,1848514
+2014,Utah,Colon and Rectum,30,27.9,32.3,739,2941836
+2014,Wyoming,Colon and Rectum,30.6,26.4,35.4,198,583642
+2014,New Mexico,Colon and Rectum,32.7,30.4,35.1,798,2083024
+2014,Oregon,Colon and Rectum,34.2,32.5,35.9,1648,3968371
+2014,Arizona,Colon and Rectum,33.7,32.4,35,2654,6719993
+2014,Colorado,Colon and Rectum,32.9,31.3,34.5,1828,5349648
+2014,Idaho,Colon and Rectum,35.9,33.2,38.9,650,1633532
+2014,California,Colon and Rectum,36,35.4,36.6,14704,38680810
+2014,Washington,Colon and Rectum,36,34.6,37.4,2857,7054196
+2014,Vermont,Colon and Rectum,34.6,30.6,39.1,283,626984
+2014,Florida,Colon and Rectum,36.2,35.5,37,9846,19888741
+2014,North Carolina,Colon and Rectum,36.8,35.7,38,4209,9934399
+2014,Rhode Island,Colon and Rectum,36.8,33.5,40.4,485,1054480
+2014,Delaware,Colon and Rectum,37.5,34,41.4,434,934948
+2014,Maine,Colon and Rectum,36.5,33.7,39.5,672,1330719
+2014,Maryland,Colon and Rectum,37.6,36.1,39.1,2496,5967295
+2014,Massachusetts,Colon and Rectum,37.6,36.2,39,3003,6749911
+2014,Michigan,Colon and Rectum,37.7,36.6,38.8,4490,9915767
+2014,Minnesota,Colon and Rectum,37.5,36,39.1,2328,5453109
+2014,Montana,Colon and Rectum,37.9,34.6,41.6,497,1022867
+2014,Nevada,Colon and Rectum,36.4,34.3,38.7,1150,2833013
+2014,Connecticut,Colon and Rectum,36.3,34.5,38.2,1599,3591873
+2014,New Hampshire,Colon and Rectum,37.4,34.5,40.6,621,1328743
+2014,South Carolina,Colon and Rectum,37.2,35.6,38.9,2153,4828430
+2014,Wisconsin,Colon and Rectum,36.9,35.5,38.4,2543,5758377
+2014,Virginia,Colon and Rectum,36.8,35.5,38,3392,8317372
+2014,Texas,Colon and Rectum,37.5,36.8,38.3,9837,26944751
+2014,Georgia,Colon and Rectum,41.9,40.7,43.2,4362,10087231
+2014,Hawaii,Colon and Rectum,41.4,38.3,44.6,716,1416349
+2014,New York,Colon and Rectum,39.3,38.5,40.2,9023,19718515
+2014,New Jersey,Colon and Rectum,41.6,40.3,42.8,4390,8925001
+2014,Oklahoma,Colon and Rectum,40.3,38.4,42.3,1753,3877499
+2014,Pennsylvania,Colon and Rectum,40.8,39.8,41.8,6710,12790565
+2014,Kansas,Colon and Rectum,41,38.8,43.3,1332,2899360
+2014,Missouri,Colon and Rectum,40.9,39.4,42.5,2947,6060930
+2014,Tennessee,Colon and Rectum,41.3,39.9,42.8,3147,6544663
+2014,Kentucky,Colon and Rectum,49.7,47.7,51.7,2560,4413057
+2015,Nebraska,Colon and Rectum,42.8,40,45.7,919,1893765
+2015,Mississippi,Colon and Rectum,48.1,45.7,50.5,1658,2989390
+2015,Louisiana,Colon and Rectum,44.4,42.6,46.3,2310,4668960
+2015,Ohio,Colon and Rectum,42.3,41.2,43.5,5993,11605090
+2015,North Dakota,Colon and Rectum,42.4,37.9,47.2,354,756835
+2015,West Virginia,Colon and Rectum,47.1,44.3,50,1146,1841053
+2015,Alabama,Colon and Rectum,42.7,41,44.5,2493,4853875
+2015,Alaska,Colon and Rectum,42.5,37.4,48,294,737709
+2015,Arkansas,Colon and Rectum,45,42.8,47.4,1582,2977853
+2015,Illinois,Colon and Rectum,42.8,41.7,43.9,6251,12839047
+2015,Kentucky,Colon and Rectum,48.4,46.5,50.4,2515,4424611
+2015,Iowa,Colon and Rectum,43.6,41.5,45.8,1672,3121997
+2015,Utah,Colon and Rectum,27.9,25.9,30.1,712,2990632
+2015,Wyoming,Colon and Rectum,30.3,26.1,35,200,586555
+2015,District of Columbia,Colon and Rectum,31,26.8,35.7,202,670377
+2015,Nevada,Colon and Rectum,32.3,30.4,34.4,1055,2883758
+2015,New Mexico,Colon and Rectum,31.7,29.4,34,794,2080328
+2015,Rhode Island,Colon and Rectum,31.8,28.7,35.2,411,1055607
+2015,Oregon,Colon and Rectum,31.9,30.3,33.6,1564,4024634
+2015,Arizona,Colon and Rectum,31.8,30.6,33.1,2583,6817565
+2015,Vermont,Colon and Rectum,33.8,29.8,38.3,277,626088
+2015,Virginia,Colon and Rectum,33.7,32.5,34.9,3182,8367587
+2015,Washington,Colon and Rectum,33.5,32.3,34.9,2704,7160290
+2015,Colorado,Colon and Rectum,32.9,31.4,34.5,1892,5448819
+2015,New Hampshire,Colon and Rectum,36,33.1,39.2,594,1330111
+2015,Massachusetts,Colon and Rectum,35.5,34.2,36.9,2872,6784240
+2015,Michigan,Colon and Rectum,35.4,34.3,36.5,4274,9917715
+2015,Maine,Colon and Rectum,35.7,32.9,38.6,669,1329453
+2015,Maryland,Colon and Rectum,36,34.5,37.5,2444,5994983
+2015,Wisconsin,Colon and Rectum,35.8,34.4,37.3,2486,5767891
+2015,California,Colon and Rectum,35,34.4,35.6,14620,38993940
+2015,Connecticut,Colon and Rectum,35.3,33.5,37.1,1578,3584730
+2015,Florida,Colon and Rectum,34.9,34.2,35.6,9696,20244914
+2015,Idaho,Colon and Rectum,35.3,32.5,38.2,645,1652828
+2015,North Carolina,Colon and Rectum,37.3,36.2,38.5,4377,10035186
+2015,Texas,Colon and Rectum,37.5,36.8,38.3,10137,27429639
+2015,New Jersey,Colon and Rectum,40.5,39.3,41.8,4314,8935421
+2015,Missouri,Colon and Rectum,39.8,38.3,41.3,2896,6076204
+2015,Montana,Colon and Rectum,38.9,35.5,42.6,507,1032073
+2015,Minnesota,Colon and Rectum,38.4,36.8,40,2408,5482435
+2015,Oklahoma,Colon and Rectum,40.8,38.9,42.7,1798,3907414
+2015,New York,Colon and Rectum,38.7,37.9,39.5,8964,19747183
+2015,Pennsylvania,Colon and Rectum,41.9,40.9,42.9,6872,12791904
+2015,Tennessee,Colon and Rectum,39.7,38.3,41.2,3106,6595056
+2015,South Carolina,Colon and Rectum,39.7,38,41.4,2320,4894834
+2015,South Dakota,Colon and Rectum,40,36.1,44.3,400,857919
+2015,Delaware,Colon and Rectum,39.4,35.7,43.3,457,944076
+2015,Georgia,Colon and Rectum,41.7,40.4,43,4477,10199398
+2015,Hawaii,Colon and Rectum,41.3,38.2,44.6,713,1425157
+2015,Kansas,Colon and Rectum,38.3,36.2,40.6,1268,2906721
+2015,Indiana,Colon and Rectum,41.6,40.1,43.1,3133,6612768

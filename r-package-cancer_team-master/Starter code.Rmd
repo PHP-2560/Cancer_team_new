@@ -1,0 +1,89 @@
+---
+title: "Starter Code"
+author: "Maydelis K. Minaya"
+date: "11/28/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+``` {r}
+
+# This is some started code that I got from online at 
+# http://www.analyticsforfun.com/2013/09/my-first-r-shiny-web-application-using.html#gpluscomments
+
+# I would like to use some of the code to get started on my map, my map will include data for the U.S. only and will give the user the ability to calculate their risk for CRC using paraemeters that the user clicks on such as sex, Race/Ethnicity, age, state, annual income, and bmi.
+
+
+# The package will be used to generate different models for risk assesments.s
+
+
+## server.R
+
+library(shiny)
+library(maps)
+
+# Source my breast cancer file with data
+breastdata<- read.csv(“~/Rworkdir/data/mergedCleaned.csv”)
+# Create a smaller data frame including only my variables of #interest:country, breast cancer rate, continent
+x<- breastdata[,c(1,5,17)]
+
+# Define server logic to plot breast cancer data for various #continents/countries
+shinyServer(function(input,output){
+
+   # Sentence presenting the table in a reactive expression
+   tableText<- reactive({
+      paste(“This table ranks countries by number of breast cancer new cases per 100,000 women. You have selected all countries in”, input$continent)
+   })
+
+   # now I return the tabletText for printing as a caption
+   output$caption<- renderText({
+   tableText()
+   })
+
+
+   # Plot a table that ranks countries (from most affected to the least) by breast cancer rate
+    output$rank<- renderTable({
+        if (input$continent==”the World”){
+        head(x[order(x$breastcancerper100th, decreasing=T),], n= input$obs)
+        } else {
+           xcont<- subset(x, continent==input$continent)
+           head(xcont[order(xcont$breastcancerper100th, decreasing=T),], n= input$obs)
+
+       }
+   })
+
+   # Plot a world map visualizing breast cancer incidence. The radius of the circle correspond
+   # to the number of breast cancer new cases (larger radius = more breast cancer new cases)
+
+   output$map<- renderPlot({
+
+    map(“world”,col=”gray90”, fill=TRUE)
+
+
+    if (input$continent==”the World”){
+        radius <- 3^sqrt(breastdata$breastcancerper100th)
+        symbols(breastdata$lon, breastdata$lat, bg = “blue”, fg = “red”,
+                      lwd = 1, circles = radius, inches = 0.175, add = TRUE,
+                      main= “New cases of breast cancer in the world, 2002”)
+
+     } else {
+       radius <- 3^sqrt(breastdata[breastdata$continent==input$continent,"breastcancerper100th"])
+
+symbols(breastdata[breastdata$continent==input$continent,”lon”],
+breastdata[breastdata$continent==input$continent,”lat”],
+bg = “blue”, fg = “red”,
+lwd = 1, circles = radius, inches = 0.175, add = TRUE,
+main= “New cases of breast cancer in the world, 2002”)
+
+
+}
+
+})
+
+})
+
+
+``
