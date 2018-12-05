@@ -1,0 +1,12 @@
+```{r}
+BMI=function(height, weight){
+ BMI=weight/(height)^2 # weight is kg; height is meter
+ return(BMI)
+}
+  
+```
+
+```{r}
+BMI(1.70,50)
+```
+
