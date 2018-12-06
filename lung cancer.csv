@@ -1,4 +1,4 @@
-Area,CancerType,Year,Sex,AgeAdjustedRate,CaseCount,Population
+region,CancerType,Year,Sex,Rate,CaseCount,Population
 Utah,Lung and Bronchus,2011-2015,Male and Female,27.6,3239,14507037
 New Mexico,Lung and Bronchus,2011-2015,Male and Female,40.3,4895,10410085
 Wyoming,Lung and Bronchus,2011-2015,Male and Female,44.6,1442,2897371
