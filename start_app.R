@@ -21,15 +21,13 @@ ui <- fluidPage(
    # To add a paragaph on BMI
    mainPanel(
      p(
-strong("The Body Mass Index (BMI)"),("is a measure of body fat based on height and weight and applies 
-to adult men and women. BMI can be used to screen for weight categories that may lead to 
+strong("The Body Mass Index (BMI)"), ("is a measure of body fat based on height and weight and applies 
+to adult men and women. BMI can be used   to screen for weight categories that may lead to 
 health problems but it is not diagnostic of the body fatness or health of an individual.
-Source: United States Centers for Disease Control and Prevention.
-Disclaimer: All the information and analysis provided in this app is for educational purposes only. 
-The information is strong (NOT) intended to replace any clinical judgment in any manner. 
-Please seek professional help if you have any concerns about your health."))
-),
-   
+Source: United States Centers for Disease Control and Prevention."),
+strong("Disclaimer: All the information and analysis provided in this app is for educational purposes only. 
+The information is NOT intended to replace any clinical judgment in any manner. 
+Please seek professional help if you have any concerns about your health."))),
 
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
