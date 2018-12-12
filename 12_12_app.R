@@ -15,6 +15,7 @@ ui <- fluidPage(
       actionButton("action_calc", label = "Calculate")        
     ),
     
+    # Create the individual tabs separatley
     # Show a plot of the generated distribution
     mainPanel(
       tabsetPanel(
