@@ -2,6 +2,7 @@
 ui <- fluidPage(
   navbarPage("Introduction",
   
+             # UI is what the user changes and interacts with, mostly the  left side of the panel!
   # Application title
   tabPanel("Body Mass Index Calculator (BMI)"),
   
