@@ -30,7 +30,7 @@ dramatically increase. This will have a major impact on many aspects of society,
 The NIH reported that in 2017, national expenditure for cancer care was $147.3 billion, 
 and this number is also likely to increase in coming years. 
 Given the unsettling implications of this data, action is required. 
-The good news is that a substantial proportion of cancer risks can be significantly mitigated." ),
+The good news is that a substantial proportion of cancer risks can be significantly mitigated."),
                                                           #break
                                                           br(),
                                                           #Paragraph output
