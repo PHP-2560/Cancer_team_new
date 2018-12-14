@@ -61,7 +61,7 @@ p("Let's get started!"))),
                                               #break
                                               br(),
                                               #Image is inserted
-                                              img(src ="Prevention_pic.jpg"),
+                                              img(src ="morbid_obese.png"),
 br()
                                              
 )),
