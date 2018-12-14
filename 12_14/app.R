@@ -1,15 +1,17 @@
+
 library(shinythemes)
 library(shiny)
 
-# load packages to have everything running in the app!!
+# load packages prior to running the app in order to have everything running in the app!!
 
 ui <- fluidPage(theme= shinytheme("cosmo"),
-                titlePanel("Colorectal and Lung Cancer Risk Assesment Tool"),    # Adds Title
-                #Adds Navigation Bar at the top of the Page
+                titlePanel("Colorectal and Lung Cancer Risk Assesment Tool"),    # Adds Title of the Website, hence Main Title
+                # Adds Navigation Bar at the top of the Page
+                # This is to have different tabs in the website
                 navbarPage("Interactive Tools to Help You", 
                            #Creates a tab
                            tabPanel("Introduction",
-                                    #Under this tab the main Panel depicts the paragraph below in the color
+                                    # Under this tab the main Panel depicts the paragraph below in the color
                                     mainPanel(span(style="color:black",
                                                    #Paragraph output bold
                                                    strong(p(""),
@@ -40,20 +42,30 @@ causes in developed countries are closely related to behavioral risk factors suc
 a sedentary lifestyle, smoking, and heavy drinking. Different cancers have distinct risk factors, 
 however many lifestyle associated factors such as nutrition, exercise, alcohol and drug use have been 
 significantly linked to specific cancer types, including colorectal and lung cancer. However, 
-                                                            important to note is that some risks factors such as one’s genetics/age cannot be altered and are
-                                                            therefore not accounted for on our risk calculator. Our website offers user friendly, interactive features 
-                                                            to calculate your risk of developing colorectal and lung cancer. It is our hope that by learning more you can 
-                                                            adopt practices that minimize your risks. Ultimately, we seek to help you become more knowledgeable and proactive toward your health.")
-),
-                                                          br(),
-                                                          p("In the Dietary Recommendations Tab, we have included an explanation of how diet also affects BMI and suggestions on dietary changes to improve one's BMI."),
-                                                          br(),
-                                                          p("Let's get started!"))),
+important to note is that some risks factors such as one’s genetics/age cannot be altered and are
+therefore not accounted for on our risk calculator. Our website offers user friendly, interactive features 
+to calculate your risk of developing colorectal and lung cancer. It is our hope that by learning more you can 
+adopt practices that minimize your risks. Ultimately, we seek to help you become more knowledgeable and proactive toward your health."),
+br(),
+
+p("Disclaimer"),
+
+br(),
+
+p("All the information and analysis provided on this website is for educational purposes ONLY. 
+The information is NOT intended to replace any clinical judgement in any matter. 
+Please seek professional help from a qualified medical provider if you have any concerns about your health and/or cancer risk."),
+
+br(),
+p("Let's get started!"))),
                                               #break
                                               br(),
                                               #Image is inserted
-                                              img(src="exercise.png")
-                                                   )),
+                                              img(src ="Prevention_pic.jpg"),
+br()
+                                             
+)),
+
                            #Another Tab is inserted
                            tabPanel("BMI Analysis",
                                     sidebarPanel(
