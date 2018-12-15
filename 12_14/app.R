@@ -70,9 +70,9 @@ tabPanel("Body Mass Index Calculator (BMI)",
 
 sidebarPanel(
     helpText("Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. 
-The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
-    numericInput("num_height", label = h4("Height (in)"),value=1),
-    numericInput("num_weight", label = h4("Weight (lbs)"),value=1),
+             The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
+    numericInput("num_height", label = h4("Height (in)"),value=60),
+    numericInput("num_weight", label = h4("Weight (lbs)"),value=100),
     actionButton("action_calc", label = "Calculate")),       
 
   
@@ -102,7 +102,7 @@ server <- function(input, output,session) {
   output$text_bmi <- renderText({
     input$action_calc
     values$bmi<-isolate({input$num_weight/((input$num_height)*(input$num_height))}*703)
-    paste("BMI: ", isolate(values$bmi))
+    paste("BMI: ", isolate(round(values$bmi,digits=1))) # prints out only 1 decimal place
   })
   
   output$text_type <- renderText({
@@ -123,13 +123,12 @@ server <- function(input, output,session) {
           
         }else
           if(values$bmi>=24.9 & values$bmi<29.9){
-            paste(("Obesity"))
-            #img("obese3-weight.png")
+            paste("Obesity")
+        
             
           }else
             if(values$bmi>=29.9){
               paste("Morbid Obesity")}
-    #img(src="morbid_obese")
     
   })
   
