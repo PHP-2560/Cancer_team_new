@@ -116,17 +116,21 @@ server <- function(input, output,session) {
       if(values$bmi>=18.5 & values$bmi<20.0){
         paste("Healthy")
         #img(src="normal-weight-bmi.png")
+        
       }else
         if(values$bmi>=20.0 & values$bmi<24.9){
           paste("Overweight")
+          
         }else
           if(values$bmi>=24.9 & values$bmi<29.9){
             paste(("Obesity"))
             #img("obese3-weight.png")
+            
           }else
             if(values$bmi>=29.9){
               paste("Morbid Obesity")}
     #img(src="morbid_obese")
+    
   })
   
   
