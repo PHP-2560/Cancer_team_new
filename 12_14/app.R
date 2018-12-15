@@ -61,53 +61,65 @@ p("Let's get started!"))),
                                               #break
                                               br(),
                                               #Image is inserted
-                                              img(src ="morbid_obese.png"),
+                                              img(src ="Prevention_pic.jpg"),
 br()
                                              
 )),
 
-                           #Another Tab is inserted
-                           tabPanel("BMI Analysis",
-                                    sidebarPanel(
-                                      # Adds buttons for selecting gender and metric system
-                                      radioButtons("gender", "Gender", c("Male","Female")),
-                                      radioButtons("metric_sys", "Units", choices = c("Metric","Standard"), selected = "Standard"),
-                                      # Adds result of DEPENDENT slider bars created in output below
-                                      wellPanel(uiOutput("ui_height")),     
-                                      wellPanel(uiOutput("ui_weight")),     
-                                      # Adding input slider bars reference name, label, min/max values, and starting value respectively
-                                      sliderInput("target.date", "Maximum Number of Weeks To Achieve Desired Weight", min = 1, max = 100, value = 50),
-                                      sliderInput("intensity", "Number of Hours Devoted to Exercising Every Week", min = 1, max = 20, value = 5)
-                                    ),
-                                    mainPanel(
-                                      plotOutput("weight_distribution"),    # Prints the bmi graph that was created in output below
-                                      textOutput("labelBMI"),               # Prints the text of your BMI that was created in ouput below
-                                      textOutput("labelTargetBmi"),         # Prints the text of your target BMI that was created in output below
-                                      textOutput("labelUSABmi"),            # Prints the text of the your BMI compared to the US pop as created in output below
-                                      textOutput("labelUSATargetBmi"),      # Prints the text of the your target BMI compared to the US pop as created in output below
-                                      span(textOutput("labelBmiNotes"),style="color:red") #Prints a note on BMI in red
-                                    )
-                           ),
-                           #Inserts another tab
-                           tabPanel("Workout Analysis",
-                                    fluidRow(
-                                      column(width = 5, tableOutput("exercises")),
-                                      column(width=5, textOutput("labelcalburn")),
-                                      tags$head(tags$style("#labelcalburn{color: blue;font-size: 40px;font-style: bold;}"))
-                                    )
-                           ),
-                           
-                           tabPanel("Dietary Recommendations", 
-                                    fluidRow(
-                                      column(width = 6, textOutput("diet")),
-                                      column(width = 3,  img(src="food.png")),
-                                      tags$head(tags$style("#diet{color: blue;font-size: 20px;font-style: bold;}"))
-                                    )
-                           )
-                           
-                           
-                                    )
+
+#Another Tab is inserted
+tabPanel("BMI Analysis",
+         sidebarPanel(
+           # Adds buttons for selecting gender and metric system
+           radioButtons("gender", "Gender", c("Male","Female")),
+           radioButtons("metric_sys", "Units", choices = c("Metric","Standard"), selected = "Standard"),
+           # Adds result of DEPENDENT slider bars created in output below
+           wellPanel(uiOutput("ui_height")),     
+           wellPanel(uiOutput("ui_weight"))),
+         mainPanel(
+           plotOutput("weight_distribution"),    # Prints the bmi graph that was created in output below
+           textOutput("labelBMI"),               # Prints the text of your BMI that was created in ouput below
+           textOutput("labelTargetBmi"),         # Prints the text of your target BMI that was created in output below
+           textOutput("labelUSABmi"),            # Prints the text of the your BMI compared to the US pop as created in output below
+           textOutput("labelUSATargetBmi"),      # Prints the text of the your target BMI compared to the US pop as created in output below
+           span(textOutput("labelBmiNotes"),style="color:red") #Prints a note on BMI in red
+         )
+),
+#Inserts another tab
+tabPanel("Workout Analysis",
+         fluidRow(
+           column(width = 5, tableOutput("exercises")),
+           column(width=5, textOutput("labelcalburn")),
+           tags$head(tags$style("#labelcalburn{color: blue;font-size: 40px;font-style: bold;}"))
+         )
+),
+
+tabPanel("Dietary Recommendations", 
+         fluidRow(
+           column(width = 6, textOutput("diet")),
+           column(width = 3,  img(src="food.png")),
+           tags$head(tags$style("#diet{color: blue;font-size: 20px;font-style: bold;}"))
+         )
+)
+
+
                 )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,8 +139,8 @@ server <- function(input, output) {
   # Makes a kg or lbs Slider Bar depending on whether user selects Metric or Standard.
   output$ui_weight <- renderUI({
     switch(input$metric_sys,
-           "Metric" = sliderInput("weights", "Desired Weight & Current Weight (kg)", min = 40, max = 160,value = c(80,90)),   # If metric_sys = "Metric", use this slider bar
-           "Standard" = sliderInput("weights", "Desired Weight & Current Weight (lbs)", min = 85, max = 350,value = c(180,200))   # If metric_sys = "Standard", use this slider bar
+           "Metric" = sliderInput("weights", "Current Weight (kg)", min = 40, max = 160,value = c(80,90)),   # If metric_sys = "Metric", use this slider bar
+           "Standard" = sliderInput("weights", "Current Weight (lbs)", min = 85, max = 350,value = c(180,200))   # If metric_sys = "Standard", use this slider bar
     )
   })
   
@@ -335,3 +347,6 @@ exercises<-function(input){
 #######################################################################################################
 
 shinyApp(ui = ui, server = server)
+
+
+
