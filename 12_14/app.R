@@ -77,16 +77,46 @@ sidebarPanel(
 
   
   # Create the individual tabs separatley!
-  # Show a plot of the generated distribution
+
   mainPanel(
     tabsetPanel(
       tabPanel("Output",
                p(h4("Entered values:")), div(textOutput("text_weight"), style="font-size:100%;"),textOutput("text_height"),  
-               p(h4("Calculated values:")),div(textOutput("text_bmi"), style="font-weight: bold;"), textOutput("text_type")))))))
-               
-               
+               p(h4("Calculated values:")),div(textOutput("text_bmi"), style="font-weight: bold;"), textOutput("text_type"))))),
+
+
+#Inserts another tab
+tabPanel("Lung Cancer Risk Calculator",
+         
+        sidebarPanel(
+          helpText("This calculator is based on the LLP risk model: an individual risk prediction model for lung cancer. 
+                   It is a model-based approach that estimates your probability of developing lung cancer within a 5-year period. 
+                   It takes into account specific risks factors that have been strongly correlated with lung cancer such as tobacco use, 
+                   exposure to environmental contaminants, and a family history of lung cancer. Source: Cassidy et al., 2008. British Journal of Cancer (2008) 98, 270-276."),
+          
+          # Adds buttons for selecting gender and metric system
+          radioButtons("sex", "Gender", c("Male","Female")),
+          selectInput("smoking", "Number of Years You Have Smoked", 
+          c("Never", "1-20", "21-40", "41-60", "Greater than 60", selected="Never"), selectize = TRUE, multiple=FALSE),
+          radioButtons("pneumonia", "Have You Ever Been Diagnosed with Pneumonia", c("Yes", "No")),
+          radioButtons("asbestos","Have You Been Exposed to Asbestos", c("Yes", "No")),
+          radioButtons("malignant_tumour", "Prior Diagnosis of a Malignant Tumor", c("Yes","No")),
+          selectInput("family_history", "Family History of Lung Cancer", 
+                      c("No Family History", "Early Onset (60 yrs or Younger)", "Late Onset (60 yrs or Older)",selected="No Family Hisotry "), selectize = TRUE, multiple=FALSE),
+          actionButton("action_cal_2", label="Calculate")
+ 
+                   
+          
+))))
+  
+######################################################################################################################################################
+# Setting up the server!!!!
+
 server <- function(input, output,session) {
   values <- reactiveValues()
+
+######################################################################################################################################################
+# BMI Function Server
   
   # Display values entered
   output$text_weight <- renderText({
@@ -131,8 +161,58 @@ server <- function(input, output,session) {
               paste("Morbid Obesity")}
     
   })
+
+  lung_cancer_risk=function(age, sex,smoking,pneumonia,asbestos,malignant_tumour,family_history){
+    if(sex==1){ #male
+      if(age>=40& age<=44){a=-9.06}
+      else if(age>=45& age<=49){a=-8.16}
+      else if(age>=50& age<=54){a=-7.31}
+      else if(age>=55& age<=59){a=-6.63}
+      else if(age>=60& age<=64){a=-5.97}
+      else if(age>=65& age<=69){a=-5.56}
+      else if(age>=70& age<=74){a=-5.31}
+      else if(age>=75& age<=79){a=-4.83}
+      else if(age>=80& age<=84){a=-4.68}
+    }
+    else if(sex==2){ # female
+      if(age>=40& age<=44){a=-9.90}
+      else if(age>=45& age<=49){a=-8.06}
+      else if(age>=50& age<=54){a=-7.46}
+      else if(age>=55& age<=59){a=-6.50}
+      else if(age>=60& age<=64){a=-6.22}
+      else if(age>=65& age<=69){a=-5.99}
+      else if(age>=70& age<=74){a=-5.49}
+      else if(age>=75& age<=79){a=-5.23}
+      else if(age>=80& age<=84){a=-5.42}
+    }
+    
+    
+    if(smoking==0){b1=0}
+    else if(smoking>=1&smoking<=20){b1=0.769}
+    else if(smoking>=21&smoking<=40){b1=1.452}
+    else if(smoking>=41&smoking<=60){b1=2.507}
+    else if(smoking>60){b1=2.724}
+    
+    
+    if(pneumonia==0){b2=0} # no
+    else if(pneumonia==1){b2=0.602} #yes
+    
+    if(asbestos==0){b3=0} # no
+    else if(asbestos==1){b3=0.634} # yes
+    
+    if(malignant_tumour==0) {b4=0}
+    else if(malignant_tumour==1){b4=0.675}
+    
+    if(family_history==0){b5=0}
+    else if(family_history<60){b5=0.703}
+    else if (family_history>=60){b5=0.168}
+    
+    p=1/(1+exp(-(a+b1+b2+b3+b4+b5)))*100
+    return(p)
+  }
+  
+  
   
   
 }
-
 shinyApp(ui, server)
