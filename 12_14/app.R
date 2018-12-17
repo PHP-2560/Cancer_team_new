@@ -1,6 +1,10 @@
-
+#########################################################################################################################
+# Loading Packages
 library(shinythemes)
 library(shiny)
+library(dplyr)
+library(ggplot2)
+
 
 # load packages prior to running the app in order to have everything running in the app!!
 
@@ -9,7 +13,8 @@ ui <- fluidPage(theme= shinytheme("cosmo"),
                 # Adds Navigation Bar at the top of the Page
                 # This is to have different tabs in the website
                 navbarPage("Interactive Tools to Help You", 
-                           #Creates a tab
+                           # Creates a tab
+                           # Creating the Introduction Panel
                            tabPanel("Introduction",
                                     # Under this tab the main Panel depicts the paragraph below in the color
                                     mainPanel(span(style="color:black",
@@ -35,6 +40,7 @@ Given the unsettling implications of this data, action is required.
 The good news is that a substantial proportion of cancer risks can be significantly mitigated."),
                                                           #break
                                                           br(),
+
                                                           #Paragraph output
                                                           p(
 "A study conducted by The World Cancer Research Fund concluded that up to one-third of cancer 
@@ -61,10 +67,14 @@ p("Let's get started!"))),
                                               #break
                                               br(),
                                               #Image is inserted
-                                              img(src ="Prevention_pic.jpg"),
+                                              img(src="Prevention_pic.jpg",width=460,align="center"),
+img(src="Intro-diagram.jpg", width=420,align="right"),
+
 br()
                                              
 )),
+
+# Creating the BMI tab
 
 tabPanel("Body Mass Index Calculator (BMI)",
 
@@ -85,7 +95,7 @@ sidebarPanel(
                p(h4("Calculated values:")),div(textOutput("text_bmi"), style="font-weight: bold;"), textOutput("text_type"))))),
 
 
-#Inserts another tab
+#Inserts another tab, lung cancer calculator tab
 tabPanel("Lung Cancer Risk Calculator",
          
         sidebarPanel(
@@ -96,6 +106,9 @@ tabPanel("Lung Cancer Risk Calculator",
           
           # Adds buttons for selecting gender and metric system
           radioButtons("sex", "Gender", c("Male","Female")),
+          selectInput("age", "Age", 
+                      c("40-44", "45-49", "50-54", "55-59", "60-69","70-74","75-79","80-84", selected="40-44"), 
+                      selectize = TRUE, multiple = FALSE),
           selectInput("smoking", "Number of Years You Have Smoked", 
           c("Never", "1-20", "21-40", "41-60", "Greater than 60", selected="Never"), selectize = TRUE, multiple=FALSE),
           radioButtons("pneumonia", "Have You Ever Been Diagnosed with Pneumonia", c("Yes", "No")),
