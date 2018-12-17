@@ -1,4 +1,4 @@
-#########################################################################################################################
+################################################################################################################################
 # Loading Packages
 library(shinythemes)
 library(shiny)
@@ -69,6 +69,8 @@ p("Let's get started!"))),
                                               #Image is inserted
                                               img(src="Prevention_pic.jpg",width=460,align="center"),
 img(src="Intro-diagram.jpg", width=420,align="right"),
+
+#images are not the same size, make sure to resize!!
 
 br()
                                              
@@ -153,7 +155,6 @@ server <- function(input, output,session) {
     values$bmi<-isolate({input$num_weight/((input$num_height)*(input$num_height))}*703)
     if(values$bmi<18.5){
       paste("Underweight")
-      #img(src="underweight-bmi.png")
       
     }else
       if(values$bmi>=18.5 & values$bmi<20.0){
@@ -224,6 +225,12 @@ server <- function(input, output,session) {
     return(p)
   }
   
+  output$text_risk <- renderText({
+    input$action_calc_2
+    values$risk<-isolate(lung_cancer_risk(values$age, values$sex,values$smoking,values$pneumonia,
+                                          values$asbestos,values$malignant_tumour,  values$family_history))
+    paste("Risk:: ", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
+  })
   
   
   
