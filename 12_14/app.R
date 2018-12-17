@@ -7,6 +7,7 @@ library(ggplot2)
 
 
 # load packages prior to running the app in order to have everything running in the app!!
+# The ui is the user interphase where you put in all the user interactive functions, functions that run the app, the backbones do not go here
 
 ui <- fluidPage(theme= shinytheme("cosmo"),
                 titlePanel("Colorectal and Lung Cancer Risk Assesment Tool"),    # Adds Title of the Website, hence Main Title
@@ -118,20 +119,31 @@ tabPanel("Lung Cancer Risk Calculator",
           radioButtons("malignant_tumour", "Prior Diagnosis of a Malignant Tumor", c("Yes","No")),
           selectInput("family_history", "Family History of Lung Cancer", 
                       c("No Family History", "Early Onset (60 yrs or Younger)", "Late Onset (60 yrs or Older)",selected="No Family Hisotry "), selectize = TRUE, multiple=FALSE),
-          actionButton("action_cal_2", label="Calculate")
- 
+          actionButton("action_cal_2", label="Calculate Risk")
+          
+          
+          
+          
+    
                    
+  
+          
+          
+          
+          
           
 ))))
   
 ######################################################################################################################################################
 # Setting up the server!!!!
+# This part is very important for the shiny app to run properly!
+# The server is where you put in all the functions for the app to run.
 
 server <- function(input, output,session) {
   values <- reactiveValues()
 
 ######################################################################################################################################################
-# BMI Function Server
+# BMI Function
   
   # Display values entered
   output$text_weight <- renderText({
@@ -174,8 +186,61 @@ server <- function(input, output,session) {
             if(values$bmi>=29.9){
               paste("Morbid Obesity")}
     
-  })
 
+  })
+######################################################################################################################################################
+# Lung Cancer Preduction Function
+output$text_sex <-renderText({
+  input$action_calc_2
+  paste("Sex",isolate(input$sex))
+  
+})
+ 
+  output$text_smoking <-renderText({
+    input$action_calc_2
+    paste("Number of Years You Have Smoked",isolate(input$smoking))
+  })
+  
+  output$text_pneumonia<-renderText({
+    input$action_calc_2
+    paste("Have You Ever Been Diagnosed with Pneumonia",isolate(input$pneumonia))
+    
+  })
+  
+  output$text_asbestos<-renderText({
+    input$action_calc_2
+    paste("Have You Been Exposed to Asbestos",isolate(input$asbestos))
+    
+  })
+  
+  output$text_malignant_tumor<-renderText({
+    input$action_calc_2
+    paste("Prior Diagnosis of Malignant Tumor",isolate(input$malignant_tumor))
+    
+  }) 
+  
+  output$text_family_history<-renderText({
+    input$action_calc_2
+    paste("Family History of Lung Cancer",isolate(input$family_history))
+    
+  }) 
+  
+  output$text_risk <- renderText({
+    input$action_calc_2
+    values$risk<-isolate(lung_cancer_risk(values$age, values$sex,values$smoking,values$pneumonia,
+                                          values$asbestos,values$malignant_tumour,values$family_history))
+    paste("Risk:", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
+  
+  })
+  
+  output$text_risk <- renderText({
+    input$action_calc_2
+    values$risk<-isolate(input$age,input$sex,input$smoking,input$pneumonia,
+                         input$asbestos,input$malignant_tumour,input$family_history)
+    paste("Risk:", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
+    
+  })
+  
   lung_cancer_risk=function(age, sex,smoking,pneumonia,asbestos,malignant_tumour,family_history){
     if(sex==1){ #male
       if(age>=40& age<=44){a=-9.06}
@@ -220,19 +285,13 @@ server <- function(input, output,session) {
     if(family_history==0){b5=0}
     else if(family_history<60){b5=0.703}
     else if (family_history>=60){b5=0.168}
-    
-    p=1/(1+exp(-(a+b1+b2+b3+b4+b5)))*100
-    return(p)
+  
+  
+  
+
+  
   }
-  
-  output$text_risk <- renderText({
-    input$action_calc_2
-    values$risk<-isolate(lung_cancer_risk(values$age, values$sex,values$smoking,values$pneumonia,
-                                          values$asbestos,values$malignant_tumour,  values$family_history))
-    paste("Risk:: ", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
-  })
-  
-  
-  
 }
+
+
 shinyApp(ui, server)
