@@ -1,9 +1,12 @@
+
+
+lung_cancer_risk=function(age, sex,smoking,pneumonia,asbestos,malignant_tumour,family_history){
 Male=1;
 Female=2;
 No=0;
-Yes=1;
-
-lung_cancer_risk=function(age, sex,smoking,pneumonia,asbestos,malignant_tumour,family_history){
+Yes=1;	
+	
+	
   if(sex==Male){ #male
     if(age>=40& age<=44){a=-9.06}
     else if(age>=45& age<=49){a=-8.16}
