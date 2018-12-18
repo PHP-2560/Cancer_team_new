@@ -161,10 +161,14 @@ server <- function(input, output,session) {
     
   })
 
-
+lung <-read.csv("lung.csv")
+#lung
+  
+  
 output$lungplot <- renderPlot({
-    ggplot(lung %>% filter(Region == input$Region), aes(x=Smokerate, y=Cancerrate, color=Year)) +
-      geom_point(size=5) +
+    ggplot(lung %>% filter(Region == input$Region) %>% mutate(Year=as.factor(Year)),
+           aes(x=Smokerate, y=Cancerrate)) +
+      geom_point(size=5, aes(color=Year)) +
       xlab("Smoking Rate") +
       ylab("Cancer Rate") +
       ggtitle("Smoking is Directly Correlated to Lung Cancer") +
@@ -172,7 +176,7 @@ output$lungplot <- renderPlot({
       geom_smooth(method = "lm") +
       theme_bw()
   })
-###
+####
 
 
 }
