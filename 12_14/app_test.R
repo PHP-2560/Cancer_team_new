@@ -3,6 +3,7 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
+
 # load packages prior to running the app in order to have everything running in the app!!
 
 ui <- fluidPage(theme= shinytheme("cosmo"),
@@ -91,11 +92,11 @@ tabPanel("Tobacco Use Increases Lung Cancer Risk",
            helpText("This plot shows a linear regression model of tobacco use and cancer risk. 
                     The data used to make this plot was gathered from the CDC's website."),
            #radioButtons("Region", c("midwest", "northeast","south","west"), selected = "midwest")),
-           selectInput("region","Region:", 
-                        c("midwest", "northeast","south","west"), selected = "midwest")),
+           selectInput("Region","Region:", 
+                        choices=c("midwest", "northeast","south","west"))),
          # Show a plot of the generated distribution
          mainPanel(
-           plotOutput("distPlot")
+           plotOutput("lungplot")
          ))
 
      
@@ -109,6 +110,10 @@ tabPanel("Tobacco Use Increases Lung Cancer Risk",
 server <- function(input, output,session) {
   values <- reactiveValues()
 
+  library(shinythemes)
+  library(shiny)
+  library(ggplot2)
+  library(dplyr)
 ######################################################################################################################################################
 # BMI Function Server
   
@@ -155,35 +160,23 @@ server <- function(input, output,session) {
               paste("Morbid Obesity")}
     
   })
-  
-  
-  output$distPlot <- renderPlot({
-    
-    # generate an rnorm distribution and plot it
-    dist <- rnorm(input$region)
-    hist(dist)
-  })
-  
-  
-lung <- read.csv("lung.csv")
 
-  
-  
-  lungplot <- function(x) {
-    library(ggplot2)
+
+output$lungplot <- renderPlot({
+    filtered <-
+    lung %>%
+      filter(Region == input$Region)
     ggplot(lung, aes(x=Smokerate, y=Cancerrate, color=Year)) +
-      geom_point(size=10) +
+      geom_point(size=5) +
       xlab("Smoking Rate") +
       ylab("Cancer Rate") +
       ggtitle("Smoking is Directly Correlated to Lung Cancer") +
-      facet_grid(~Region)+
+      #facet_grid(~Region)+
       geom_smooth(method = "lm") +
       theme_bw()
-  } 
-  
-  
-  
-  
-  
+  })
+###
+
+
 }
 shinyApp(ui, server)
