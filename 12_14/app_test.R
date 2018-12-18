@@ -7,7 +7,7 @@ library(dplyr)
 # load packages prior to running the app in order to have everything running in the app!!
 
 ui <- fluidPage(theme= shinytheme("cosmo"),
-                titlePanel("Colorectal and Lung Cancer Risk Assesment Tool"),    # Adds Title of the Website, hence Main Title
+                titlePanel("Lung Cancer Risk Assesment Tool"),    # Adds Title of the Website, hence Main Title
                 # Adds Navigation Bar at the top of the Page
                 # This is to have different tabs in the website
                 navbarPage("Interactive Tools to Help You", 
@@ -75,9 +75,8 @@ sidebarPanel(
              The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
     numericInput("num_height", label = h4("Height (in)"),value=60),
     numericInput("num_weight", label = h4("Weight (lbs)"),value=100),
-    actionButton("action_calc", label = "Calculate")),       
-
-  
+    actionButton("action_calc", label = "Calculate"),
+    img(src="Intro-diagram.jpg", width=420,align="center")),
   # Create the individual tabs separatley!
 
   mainPanel(
@@ -97,12 +96,69 @@ tabPanel("Tobacco Use Increases Lung Cancer Risk",
          # Show a plot of the generated distribution
          mainPanel(
            plotOutput("lungplot")
-         ))
+         )),
+
+##Inserts another tab, lung cancer calculator tab
+tabPanel("Lung Cancer Risk Calculator",
+         sidebarPanel(
+           helpText("This calculator is based on the LLP risk model: an individual risk prediction model for lung cancer. 
+                    It is a model-based approach that estimates your probability of developing lung cancer within a 5-year period. 
+                    It takes into account specific risks factors that have been strongly correlated with lung cancer such as tobacco use, 
+                    exposure to environmental contaminants, and a family history of lung cancer. Source: Cassidy et al., 2008. 
+                    British Journal of Cancer (2008) 98, 270-276.")),
+         # Adds buttons for selecting gender and metric system
+         radioButtons(
+           inputId  = "sex",
+           label    = "Sex",
+           choices  = c("Male" = 1, "Female" = 2),
+           selected = 2
+         ),
+         numericInput("age",label= h4("Age"),value=50),
+         numericInput("smoking",label=h4("Number of Years You Have Smoked"), value=1),
+         
+         radioButtons(
+           inputId  = "pneumonia",
+           label    = "Have You Ever Been Diagnosed with Pneumonia",
+           choices  = c("Yes" = 1, "No" = 0),
+           selected = 0
+         ),
+         
+         radioButtons(
+           inputId  = "asbestos",
+           label    = "Have You Been Exposed to Asbestos",
+           choices  = c("Yes" = 1, "No" = 0),
+           selected = 0
+         ),
+         
+         radioButtons(
+           inputId  = "malignant_tumor",
+           label    = "Prior Diagnosis of a Malignant Tumor",
+           choices  = c("Yes" = 1, "No" = 0),
+           selected = 0
+         ),
+         
+         numericInput("family_history", label=h4("Prior Family History of Lung Cancer (Onset)"),value=1),
+         
+         actionButton("action_cal_2", label="Calculate Risk")),
+mainPanel(span(style="color:black",
+               p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
+               textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
+               textOutput("text_asbestos"),textOutput("text_malignant_tumor"),textOutput("text_family_history"),
+               p(h4("Calculated values:")),div(textOutput("text_risk"), style="font-weight: bold;"), textOutput("text_risk"
+               )))                                                                                            
+
+
+
 
      
 
 
-          
+
+
+
+######################################################################################################################################################
+## Do Not touch this part! This is to close the UI part
+
 ))
 ######################################################################################################################################################
 # Setting up the server!!!!
@@ -176,7 +232,18 @@ output$lungplot <- renderPlot({
       geom_smooth(method = "lm") +
       theme_bw()
   })
-####
+
+
+
+
+
+
+
+
+
+
+######################################################################################################
+# Do not touch anything after this part!!!!
 
 
 }
