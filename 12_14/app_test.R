@@ -138,24 +138,17 @@ tabPanel("Lung Cancer Risk Calculator",
          ),
          
          numericInput("family_history", label=h4("Prior Family History of Lung Cancer (Onset)"),value=1),
-         
-         actionButton("action_cal_2", label="Calculate Risk")),
-mainPanel(span(style="color:black",
+         actionButton("action_cal_2", label="Calculate Risk"),
+mainPanel(
                p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
                textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
                textOutput("text_asbestos"),textOutput("text_malignant_tumor"),textOutput("text_family_history"),
-               p(h4("Calculated values:")),div(textOutput("text_risk"), style="font-weight: bold;"), textOutput("text_risk"
-               )))                                                                                            
+               p(h4("Calculated values:")),div(textOutput("text_risk"), 
+              style="font-weight: bold;"), textOutput("text_risk")))
 
 
 
-
-     
-
-
-
-
-
+    
 ######################################################################################################################################################
 ## Do Not touch this part! This is to close the UI part
 
@@ -217,10 +210,19 @@ server <- function(input, output,session) {
     
   })
 
+
+
+  
+ 
+
+
+
+
+
+
 lung <-read.csv("lung.csv")
-#lung
-  
-  
+#lung plot Lm model
+####################################################################################### 
 output$lungplot <- renderPlot({
     ggplot(lung %>% filter(Region == input$Region) %>% mutate(Year=as.factor(Year)),
            aes(x=Smokerate, y=Cancerrate)) +
