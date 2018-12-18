@@ -69,7 +69,6 @@ p("Let's get started!"))),
                                               br(),
                                               #Image is inserted
                                               img(src="Prevention_pic.jpg",width=460,align="center"),
-img(src="Intro-diagram.jpg", width=420,align="right"),
 
 #images are not the same size, make sure to resize!!
 
@@ -80,65 +79,82 @@ br()
 # Creating the BMI tab
 
 tabPanel("Body Mass Index Calculator (BMI)",
+         sidebarPanel(
+helpText("Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+         The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
+            numericInput("num_height", label = h4("Height (in)"),value=60),
+            numericInput("num_weight", label = h4("Weight (lbs)"),value=100),
+            actionButton("action_calc", label = "Calculate"),
+            img(src="Intro-diagram.jpg", width=420,align="center")),
 
-sidebarPanel(
-    helpText("Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. 
-             The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
-    numericInput("num_height", label = h4("Height (in)"),value=60),
-    numericInput("num_weight", label = h4("Weight (lbs)"),value=100),
-    actionButton("action_calc", label = "Calculate")),       
 
-  
-  # Create the individual tabs separatley!
-
-  mainPanel(
-    tabsetPanel(
-      tabPanel("Output",
-               p(h4("Entered values:")), div(textOutput("text_weight"), style="font-size:100%;"),textOutput("text_height"),  
-               p(h4("Calculated values:")),div(textOutput("text_bmi"), style="font-weight: bold;"), textOutput("text_type"))))),
-
+      mainPanel(
+        p(h4("Entered values:")), div(textOutput("text_weight"), style="font-size:100%;"),textOutput("text_height"),  
+        p(h4("Calculated values:")),div(textOutput("text_bmi"), style="font-weight: bold;"), textOutput("text_type")
+      )
+             
+      ),
 
 #Inserts another tab, lung cancer calculator tab
 tabPanel("Lung Cancer Risk Calculator",
-         
-        sidebarPanel(
-          helpText("This calculator is based on the LLP risk model: an individual risk prediction model for lung cancer. 
+         sidebarPanel(
+         helpText("This calculator is based on the LLP risk model: an individual risk prediction model for lung cancer. 
                    It is a model-based approach that estimates your probability of developing lung cancer within a 5-year period. 
                    It takes into account specific risks factors that have been strongly correlated with lung cancer such as tobacco use, 
-                   exposure to environmental contaminants, and a family history of lung cancer. Source: Cassidy et al., 2008. British Journal of Cancer (2008) 98, 270-276."),
+                   exposure to environmental contaminants, and a family history of lung cancer. Source: Cassidy et al., 2008. 
+                   British Journal of Cancer (2008) 98, 270-276."),
+        # Adds buttons for selecting gender and metric system
+        radioButtons(
+          inputId  = "sex",
+          label    = "Sex",
+          choices  = c("Male" = 1, "Female" = 2),
+          selected = 2
+        ),
+        numericInput("age",label= h4("Age"),value=50),
+        numericInput("smoking",label=h4("Number of Years You Have Smoked"), value=1),
+        
+        radioButtons(
+          inputId  = "pneumonia",
+          label    = "Have You Ever Been Diagnosed with Pneumonia",
+          choices  = c("Yes" = 1, "No" = 0),
+          selected = 0
+        ),
+        
+        radioButtons(
+          inputId  = "asbestos",
+          label    = "Have You Been Exposed to Asbestos",
+          choices  = c("Yes" = 1, "No" = 0),
+          selected = 0
+        ),
+        
+        radioButtons(
+          inputId  = "malignant_tumour",
+          label    = "Prior Diagnosis of a Malignant Tumor",
+          choices  = c("Yes" = 1, "No" = 0),
+          selected = 0
+        ),
+        
+        numericInput("family_history", label=h4("Prior Family History of Lung Cancer (Onset)"),value=1),
+        
+        actionButton("action_cal_2", label="Calculate Risk"))
+        
+                
+)
+)
+)
+
+#p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
+#textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
+#textOutput("text_asbestos"),textOutput("text_malignant_tumor"),textOutput("text_family_history"),
+#p(h4("Calculated values:")),div(textOutput("text_risk"), style="font-weight: bold;"), textOutput("text_risk"
           
-          # Adds buttons for selecting gender and metric system
-          radioButtons("sex", "Gender", c("Male","Female")),
-          selectInput("age", "Age", 
-                      c("40-44", "45-49", "50-54", "55-59", "60-69","70-74","75-79","80-84", selected="40-44"), 
-                      selectize = TRUE, multiple = FALSE),
-          selectInput("smoking", "Number of Years You Have Smoked", 
-          c("Never", "1-20", "21-40", "41-60", "Greater than 60", selected="Never"), selectize = TRUE, multiple=FALSE),
-          radioButtons("pneumonia", "Have You Ever Been Diagnosed with Pneumonia", c("Yes", "No")),
-          radioButtons("asbestos","Have You Been Exposed to Asbestos", c("Yes", "No")),
-          radioButtons("malignant_tumour", "Prior Diagnosis of a Malignant Tumor", c("Yes","No")),
-          selectInput("family_history", "Family History of Lung Cancer", 
-                      c("No Family History", "Early Onset (60 yrs or Younger)", "Late Onset (60 yrs or Older)",selected="No Family Hisotry "), selectize = TRUE, multiple=FALSE),
-          actionButton("action_cal_2", label="Calculate Risk")
-          
-          
-          
-          
-    
-                   
-  
-          
-          
-          
-          
-          
-))))
+      
   
 ######################################################################################################################################################
 # Setting up the server!!!!
 # This part is very important for the shiny app to run properly!
 # The server is where you put in all the functions for the app to run.
-
+#source("./lung_func.R")
 server <- function(input, output,session) {
   values <- reactiveValues()
 
@@ -190,12 +206,17 @@ server <- function(input, output,session) {
   })
 ######################################################################################################################################################
 # Lung Cancer Preduction Function
-output$text_sex <-renderText({
+
+  output$text_sex <-renderText({
   input$action_calc_2
   paste("Sex",isolate(input$sex))
   
 })
- 
+  output$text_age <-renderText({
+    input$action_calc_2
+    paste("Age",isolate(input$age))
+    
+  })
   output$text_smoking <-renderText({
     input$action_calc_2
     paste("Number of Years You Have Smoked",isolate(input$smoking))
@@ -227,70 +248,20 @@ output$text_sex <-renderText({
   
   output$text_risk <- renderText({
     input$action_calc_2
-    values$risk<-isolate(lung_cancer_risk(values$age, values$sex,values$smoking,values$pneumonia,
-                                          values$asbestos,values$malignant_tumour,values$family_history))
-    paste("Risk:", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
-  
-  })
-  
-  output$text_risk <- renderText({
-    input$action_calc_2
-    values$risk<-isolate(input$age,input$sex,input$smoking,input$pneumonia,
-                         input$asbestos,input$malignant_tumour,input$family_history)
-    paste("Risk:", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
-    
-  })
-  
-  lung_cancer_risk=function(age, sex,smoking,pneumonia,asbestos,malignant_tumour,family_history){
-    if(sex==1){ #male
-      if(age>=40& age<=44){a=-9.06}
-      else if(age>=45& age<=49){a=-8.16}
-      else if(age>=50& age<=54){a=-7.31}
-      else if(age>=55& age<=59){a=-6.63}
-      else if(age>=60& age<=64){a=-5.97}
-      else if(age>=65& age<=69){a=-5.56}
-      else if(age>=70& age<=74){a=-5.31}
-      else if(age>=75& age<=79){a=-4.83}
-      else if(age>=80& age<=84){a=-4.68}
-    }
-    else if(sex==2){ # female
-      if(age>=40& age<=44){a=-9.90}
-      else if(age>=45& age<=49){a=-8.06}
-      else if(age>=50& age<=54){a=-7.46}
-      else if(age>=55& age<=59){a=-6.50}
-      else if(age>=60& age<=64){a=-6.22}
-      else if(age>=65& age<=69){a=-5.99}
-      else if(age>=70& age<=74){a=-5.49}
-      else if(age>=75& age<=79){a=-5.23}
-      else if(age>=80& age<=84){a=-5.42}
-    }
-    
-    
-    if(smoking==0){b1=0}
-    else if(smoking>=1&smoking<=20){b1=0.769}
-    else if(smoking>=21&smoking<=40){b1=1.452}
-    else if(smoking>=41&smoking<=60){b1=2.507}
-    else if(smoking>60){b1=2.724}
-    
-    
-    if(pneumonia==0){b2=0} # no
-    else if(pneumonia==1){b2=0.602} #yes
-    
-    if(asbestos==0){b3=0} # no
-    else if(asbestos==1){b3=0.634} # yes
-    
-    if(malignant_tumour==0) {b4=0}
-    else if(malignant_tumour==1){b4=0.675}
-    
-    if(family_history==0){b5=0}
-    else if(family_history<60){b5=0.703}
-    else if (family_history>=60){b5=0.168}
-  
-  
-  
+    values$risk<- lung_cancer_risk(age=input$age, sex=input$sex,smoking=input$smoking,pneumonia=input$pneumonia,
+                                   asbestos=input$asbestos,malignant_tumour=nput$malignant_tumour, 
+                                   family_history=input$family_history)
+  paste("Risk:: ", isolate(round(values$risk,digits=1)))  #prints out only 1 decimal place
+    })
+      
+      
+      
+      
+      #isolate({lung_cancer_risk(input$age, input$sex,input$smoking,input$pneumonia,
+      #input$asbestos,input$malignant_tumour, input$family_history}))
+    #paste("Risk:: ", isolate(round(values$risk,digits=1))) # prints out only 1 decimal place
+ # })
 
-  
-  }
 }
 
 
