@@ -163,10 +163,7 @@ server <- function(input, output,session) {
 
 
 output$lungplot <- renderPlot({
-    filtered <-
-    lung %>%
-      filter(Region == input$Region)
-    ggplot(lung, aes(x=Smokerate, y=Cancerrate, color=Year)) +
+    ggplot(lung %>% filter(Region == input$Region), aes(x=Smokerate, y=Cancerrate, color=Year)) +
       geom_point(size=5) +
       xlab("Smoking Rate") +
       ylab("Cancer Rate") +
