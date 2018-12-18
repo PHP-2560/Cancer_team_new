@@ -128,7 +128,7 @@ tabPanel("Lung Cancer Risk Calculator",
         ),
         
         radioButtons(
-          inputId  = "malignant_tumour",
+          inputId  = "malignant_tumor",
           label    = "Prior Diagnosis of a Malignant Tumor",
           choices  = c("Yes" = 1, "No" = 0),
           selected = 0
@@ -136,15 +136,29 @@ tabPanel("Lung Cancer Risk Calculator",
         
         numericInput("family_history", label=h4("Prior Family History of Lung Cancer (Onset)"),value=1),
         
-        actionButton("action_cal_2", label="Calculate Risk"))
-        
-                
-)
-)
-)
+        actionButton("action_cal_2", label="Calculate Risk")),
+        mainPanel(span(style="color:black",
+                       p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
+                       textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
+                       textOutput("text_asbestos"),textOutput("text_malignant_tumor"),textOutput("text_family_history"
+          )))),
+                       #p(h4("Calculated values:")),div(textOutput("text_risk"), style="font-weight: bold;"), textOutput("text_risk"
+  
 
-#p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
-#textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
+tabPanel("Tobacco Use Increases Lung Cancer Risk",
+         sidebarPanel(
+           helpText("This plot shows a linear regression model of tobacco use and cancer risk. 
+                    The data used to make this plot was gathered from the CDC's website.")
+           
+
+))
+))
+                        
+
+
+
+
+
 #textOutput("text_asbestos"),textOutput("text_malignant_tumor"),textOutput("text_family_history"),
 #p(h4("Calculated values:")),div(textOutput("text_risk"), style="font-weight: bold;"), textOutput("text_risk"
           
@@ -246,12 +260,12 @@ server <- function(input, output,session) {
     
   }) 
   
+  
+  
   output$text_risk <- renderText({
     input$action_calc_2
-    values$risk<- lung_cancer_risk(age=input$age, sex=input$sex,smoking=input$smoking,pneumonia=input$pneumonia,
-                                   asbestos=input$asbestos,malignant_tumour=nput$malignant_tumour, 
-                                   family_history=input$family_history)
-  paste("Risk:: ", isolate(round(values$risk,digits=1)))  #prints out only 1 decimal place
+    values$risk<- isolate(input$age)
+    paste("Risk:", isolate(round(values$risk,digits=1)))  #prints out only 1 decimal place
     })
       
       
