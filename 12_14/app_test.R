@@ -75,8 +75,8 @@ sidebarPanel(
              The BMI is not always an accurate measure of health because it does not take into account muscle mass or body shape."),
     numericInput("num_height", label = h4("Height (in)"),value=60),
     numericInput("num_weight", label = h4("Weight (lbs)"),value=100),
-    actionButton("action_calc", label = "Calculate"),
-    img(src="Intro-diagram.jpg", width=420,align="center")),
+    actionButton("action_calc", label = "Calculate")),
+    img(src="Intro-diagram.jpg", width=420,align="center"),
   # Create the individual tabs separatley!
 
   mainPanel(
@@ -105,7 +105,7 @@ tabPanel("Lung Cancer Risk Calculator",
                     It is a model-based approach that estimates your probability of developing lung cancer within a 5-year period. 
                     It takes into account specific risks factors that have been strongly correlated with lung cancer such as tobacco use, 
                     exposure to environmental contaminants, and a family history of lung cancer. Source: Cassidy et al., 2008. 
-                    British Journal of Cancer (2008) 98, 270-276.")),
+                    British Journal of Cancer (2008) 98, 270-276."),
          # Adds buttons for selecting gender and metric system
          radioButtons(
            inputId  = "sex",
@@ -138,7 +138,7 @@ tabPanel("Lung Cancer Risk Calculator",
          ),
          
          numericInput("family_history", label=h4("Prior Family History of Lung Cancer (Onset)"),value=1),
-         actionButton("action_cal_2", label="Calculate Risk"),
+         actionButton("action_cal_2", label="Calculate Risk")),
 mainPanel(
                p(h4("Entered values:")), div(textOutput("text_sex"), style="font-size:100%;"),
                textOutput("text_age"),textOutput("text_smoking"),textOutput("text_pneumonia"),
@@ -210,16 +210,54 @@ server <- function(input, output,session) {
     
   })
 
-
-
+  # Lung Cancer Preduction Function
   
- 
-
-
-
-
-
-
+  output$text_sex <-renderText({
+    input$action_calc_2
+    paste("Sex",isolate(input$sex))
+    
+  })
+  output$text_age <-renderText({
+    input$action_calc_2
+    paste("Age",isolate(input$age))
+    
+  })
+  output$text_smoking <-renderText({
+    input$action_calc_2
+    paste("Number of Years You Have Smoked",isolate(input$smoking))
+  })
+  
+  output$text_pneumonia<-renderText({
+    input$action_calc_2
+    paste("Have You Ever Been Diagnosed with Pneumonia",isolate(input$pneumonia))
+    
+  })
+  
+  output$text_asbestos<-renderText({
+    input$action_calc_2
+    paste("Have You Been Exposed to Asbestos",isolate(input$asbestos))
+    
+  })
+  
+  output$text_malignant_tumor<-renderText({
+    input$action_calc_2
+    paste("Prior Diagnosis of Malignant Tumor",isolate(input$malignant_tumor))
+    
+  }) 
+  
+  output$text_family_history<-renderText({
+    input$action_calc_2
+    paste("Family History of Lung Cancer",isolate(input$family_history))
+    
+  }) 
+  
+  output$text_risk <- renderText({
+  input$action_calc_2
+  values$risk<- isolate(input$age)
+  paste("Risk:", isolate(round(values$risk,digits=1)))  #prints out only 1 decimal place
+  })
+  
+  
 lung <-read.csv("lung.csv")
 #lung plot Lm model
 ####################################################################################### 
@@ -237,7 +275,7 @@ output$lungplot <- renderPlot({
 
 
 
-
+###
 
 
 
